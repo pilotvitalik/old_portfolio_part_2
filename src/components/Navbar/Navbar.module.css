@@ -18,4 +18,5 @@ ul li{
 	height: 45px;
 	list-style-type: none;
 	color: #fff;
+	border-bottom: 1px solid #202226;
 }
