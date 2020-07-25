@@ -12,12 +12,12 @@ class Navbar extends React.Component{
 
 	render(){
 		return(
-		<ul>
-		  <li>Photo</li> 
-		  <NavMenu navMenu={ this.state.img }/>
-		  <li>SocialNetwork</li>
-		  <li>Rights</li>	
-		</ul>
+		<div className={style.leftNavbar}>
+		  <div>Photo</div> 
+    	  <NavMenu navMenu={ this.state.img }/>
+		  <div>SocialNetwork</div>
+		  <div>Rights</div>	
+		</div>
 		);
 	}
 }

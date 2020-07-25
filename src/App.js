@@ -8,7 +8,7 @@ class App extends React.Component{
 	render(){
 		return(
 		<div className={styles.wrapper}>
-		  <Navbar navMenu={store.whiteImg}/>
+		  <Navbar navMenu={store.darkImg}/>
 		  <Content />
 		</div>
 		);

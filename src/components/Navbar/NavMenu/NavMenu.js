@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavMenu.module.css';
 
 class NavMenu extends React.Component{
 	constructor(props){
@@ -17,7 +18,8 @@ class NavMenu extends React.Component{
 		console.log(list);
 		const listItems = list.map((item) =>
 			<li>
-				<img src={item.url} />
+				<img src={item.url} alt={item.name}/>
+				<p>{item.title}</p>
 			</li>
 		  );
 		return (
