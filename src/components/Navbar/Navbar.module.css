@@ -5,10 +5,3 @@
 	width: 200px;
 	height: auto;
 }
-.leftNavbar{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	width: 185px;
-	height: auto;
-}

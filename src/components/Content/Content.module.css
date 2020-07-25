@@ -1,7 +1,7 @@
 .wrapper{
 	display: block;
 	position: relative;
-	width: 100%;
+	width: auto;
 	height: 230px;
 	background: transparent;
 }

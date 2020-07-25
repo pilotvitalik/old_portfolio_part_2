@@ -9,10 +9,6 @@ class NavMenu extends React.Component{
 		}
 	}
 
-	componentDidMount(){
-		console.log(this.state.items);
-	}
-
 	render(){
 		const list = this.state.items;
 		console.log(list);

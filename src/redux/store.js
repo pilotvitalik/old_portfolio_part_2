@@ -1,16 +1,18 @@
-import aboutImg from '../img/about_white.svg';
-import blogImg from '../img/blog_white.svg';
-import contactImg from '../img/contact_white.svg';
-import homeImg from '../img/home_white.svg';
-import portfolioImg from '../img/portfolio_white.svg';
-import resumeImg from '../img/resume_white.svg';
+import aboutImg from '../img/iconNavbar/about_white.svg';
+import blogImg from '../img/iconNavbar/blog_white.svg';
+import contactImg from '../img/iconNavbar/contact_white.svg';
+import homeImg from '../img/iconNavbar/home_white.svg';
+import portfolioImg from '../img/iconNavbar/portfolio_white.svg';
+import resumeImg from '../img/iconNavbar/resume_white.svg';
 
-import aboutImgDark from '../img/about_dark.svg';
-import blogImgDark from '../img/blog_dark.svg';
-import contactImgDark from '../img/contact_dark.svg';
-import homeImgDark from '../img/home_dark.svg';
-import portfolioImgDark from '../img/portfolio_dark.svg';
-import resumeImgDark from '../img/resume_dark.svg';
+import aboutImgDark from '../img/iconNavbar/about_dark.svg';
+import blogImgDark from '../img/iconNavbar/blog_dark.svg';
+import contactImgDark from '../img/iconNavbar/contact_dark.svg';
+import homeImgDark from '../img/iconNavbar/home_dark.svg';
+import portfolioImgDark from '../img/iconNavbar/portfolio_dark.svg';
+import resumeImgDark from '../img/iconNavbar/resume_dark.svg';
+
+import logo from '../img/logo/logo.jpg';
 
 let store = {
 	whiteImg : [
@@ -77,6 +79,11 @@ let store = {
 			title: 'Резюме'
 		}
 	],
+	logo: {
+		url: logo,
+		name: 'это я',
+		title: 'Виталий Кожушко'
+	}
 }
 
 export { store };
