@@ -14,6 +14,16 @@ import resumeImgDark from '../img/iconNavbar/resume_dark.svg';
 
 import logo from '../img/logo/logo.jpg';
 
+import facebook from '../img/iconSocial/facebook.png';
+import twitter from '../img/iconSocial/twitter.png';
+import youtube from '../img/iconSocial/youtube.png';
+import vk from '../img/iconSocial/vk.png';
+
+import facebookDark from '../img/iconSocial/facebook_dark.png';
+import twitterDark from '../img/iconSocial/twitter_dark.png';
+import youtubeDark from '../img/iconSocial/youtube_dark.png';
+import vkDark from '../img/iconSocial/vk_dark.png';
+
 let store = {
 	whiteImg : [
 		{
@@ -83,7 +93,43 @@ let store = {
 		url: logo,
 		name: 'это я',
 		title: 'Виталий Кожушко'
-	}
+	},
+	socialColor: [
+		{
+			url: facebook,
+			name: 'facebook',
+		},
+		{
+			url: twitter,
+			name: 'twitter',
+		},
+		{
+			url: youtube,
+			name: 'youtube',
+		},
+		{
+			url: vk,
+			name: 'vk',
+		}
+	],
+	socialDark: [
+		{
+			url: facebookDark,
+			name: 'facebook',
+		},
+		{
+			url: twitterDark,
+			name: 'twitter',
+		},
+		{
+			url: youtubeDark,
+			name: 'youtube',
+		},
+		{
+			url: vkDark,
+			name: 'vk',
+		}
+	],
 }
 
 export { store };

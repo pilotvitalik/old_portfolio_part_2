@@ -16,6 +16,8 @@ class Logo extends React.Component{
 				<h2>
 					{ this.state.logo.title }
 				</h2>
+				<span>
+				</span>
 			</div>
 		);
 	}
