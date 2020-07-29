@@ -29,64 +29,76 @@ let store = {
 		{
 			url: aboutImg,
 			name: 'обо мне',
-			title: 'Обо мне'
+			title: 'Обо мне',
+			id: 1,
 		},
 		{
 			url: blogImg,
 			name: 'блог',
-			title: 'Блог'
+			title: 'Блог',
+			id: 2,
 		},
 		{
 			url: contactImg,
 			name: 'контакты',
-			title: 'Контакты'
+			title: 'Контакты',
+			id: 3,
 		},
 		{
 			url: homeImg,
 			name: 'главная',
-			title: 'Главная'
+			title: 'Главная',
+			id: 4,
 		},
 		{
 			url: portfolioImg,
 			name: 'портфолио',
-			title: 'Портфолио'
+			title: 'Портфолио',
+			id: 5,
 		},
 		{
 			url: resumeImg,
 			name: 'резюме',
-			title: 'Резюме'
+			title: 'Резюме',
+			id: 6,
 		}
 	],
 	darkImg : [
 		{
 			url: aboutImgDark,
 			name: 'обо мне',
-			title: 'Обо мне'
+			title: 'Обо мне',
+			id: 1,
 		},
 		{
 			url: blogImgDark,
 			name: 'блог',
-			title: 'Блог'
+			title: 'Блог',
+			id: 2,
 		},
 		{
 			url: contactImgDark,
 			name: 'контакты',
-			title: 'Контакты'
+			title: 'Контакты',
+			id: 3,
 		},
 		{
 			url: homeImgDark,
 			name: 'главная',
-			title: 'Главная'
+			title: 'Главная',
+			id: 4,
 		},
 		{
 			url: portfolioImgDark,
 			name: 'портфолио',
-			title: 'Портфолио'
+			title: 'Портфолио',
+			id: 5,
 		},
 		{
 			url: resumeImgDark,
 			name: 'резюме',
-			title: 'Резюме'
+			title: 'Резюме',
+			id: 6,
 		}
 	],
 	logo: {
@@ -98,38 +110,51 @@ let store = {
 		{
 			url: facebook,
 			name: 'facebook',
+			id: 1,
 		},
 		{
 			url: twitter,
 			name: 'twitter',
+			id: 2,
 		},
 		{
 			url: youtube,
 			name: 'youtube',
+			id: 3,
 		},
 		{
 			url: vk,
 			name: 'vk',
+			id: 4,
 		}
 	],
 	socialDark: [
 		{
 			url: facebookDark,
 			name: 'facebook',
+			id: 1,
 		},
 		{
 			url: twitterDark,
 			name: 'twitter',
+			id: 2,
 		},
 		{
 			url: youtubeDark,
 			name: 'youtube',
+			id: 3,
 		},
 		{
 			url: vkDark,
 			name: 'vk',
+			id: 4,
 		}
 	],
+	rights: {
+		year: '2020',
+		sign: '&copy;',
+		text: 'Все права защищены',
+	}
 }
 
 export { store };

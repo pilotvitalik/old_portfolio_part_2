@@ -1,0 +1,15 @@
+.upperBlock{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width: 200px;
+	height: 60%;
+	background: #17181B;
+}
+@media (min-width: 768px){
+	.upperBlock{
+		width: 100%;
+	}
+}

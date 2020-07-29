@@ -1,22 +1,25 @@
 import React from 'react';
 import { SocialNetwork } from './SocialNetwork/SocialNetwork.js';
+import { Rights } from './Rights/Rights.js';
+import style from './bottomBlock.module.css';
 
-class Feedback extends React.Component{
+class BottomBlock extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
 			social: this.props.social,
+			rights: this.props.rights,
 		}
 	}
 
 	render(){
 		return(
-			<div className='feedback'>
+			<div className={ style.bottomBlock }>
 				<SocialNetwork social={ this.state.social }/>
-				{/*Rights*/}
+				<Rights rights={ this.state.rights }/>
 			</div>
 		);
 	}
 }
 
-export { Feedback };
+export { BottomBlock };

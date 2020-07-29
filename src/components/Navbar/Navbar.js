@@ -1,25 +1,23 @@
 import React from 'react';
 import style from './Navbar.module.css';
-import { NavMenu } from './NavMenu/NavMenu.js';
-import { Logo } from './Logo/Logo.js';
-import { Feedback } from './Feedback/Feedback.js';
+import { BottomBlock } from './BottomBlock/BottomBlock.js';
+import { UpperBlock } from './UpperBlock/UpperBlock.js';
 
 class Navbar extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			img: this.props.navBar.darkImg,
-			logo: this.props.navBar.logo,
+			navBar: this.props.navBar,
 			social: this.props.navBar.socialDark,
+			rights: this.props.navBar.rights,
 		}
 	}
 
 	render(){
 		return(
 		<div className={ style.leftNavbar }>
-		  <Logo image={ this.state.logo }/> 
-    	  <NavMenu navMenu={ this.state.img }/>
-		  <Feedback social={ this.state.social }/>
+		  <UpperBlock navBar={ this.state.navBar }/>
+		  <BottomBlock social={ this.state.social } rights={ this.state.rights }/>
 		</div>
 		);
 	}

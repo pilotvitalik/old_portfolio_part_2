@@ -1,7 +1,15 @@
 .leftNavbar{
 	display: flex;
 	flex-direction: column;
-	position: relative;
-	width: 200px;
-	height: auto;
+	position: absolute;
+	width: 201px;
+	height: 100%;
+	z-index: 1;
+	background: #17181B;
+}
+@media (min-width: 768px){
+	.leftNavbar{
+		width: 200px;
+		position: relative;
+	}
 }

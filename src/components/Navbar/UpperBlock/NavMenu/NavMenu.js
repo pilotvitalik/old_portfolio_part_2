@@ -11,11 +11,10 @@ class NavMenu extends React.Component{
 
 	render(){
 		const list = this.state.items;
-		console.log(list);
 		const listItems = list.map((item) =>
-			<li>
-				<img src={item.url} alt={item.name}/>
-				<p>{item.title}</p>
+			<li key={ item.id }>
+				<img src={ item.url } alt={ item.name }/>
+				<p>{ item.title }</p>
 			</li>
 		  );
 		return (
