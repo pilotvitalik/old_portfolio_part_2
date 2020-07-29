@@ -69,36 +69,42 @@ let store = {
 			name: 'обо мне',
 			title: 'Обо мне',
 			id: 1,
+			path: '/about_me',
 		},
 		{
 			url: blogImgDark,
 			name: 'блог',
 			title: 'Блог',
 			id: 2,
+			path: '/blog',
 		},
 		{
 			url: contactImgDark,
 			name: 'контакты',
 			title: 'Контакты',
 			id: 3,
+			path: '/contacts',
 		},
 		{
 			url: homeImgDark,
 			name: 'главная',
 			title: 'Главная',
 			id: 4,
+			path: '/',
 		},
 		{
 			url: portfolioImgDark,
 			name: 'портфолио',
 			title: 'Портфолио',
 			id: 5,
+			path: '/portfolio',
 		},
 		{
 			url: resumeImgDark,
 			name: 'резюме',
 			title: 'Резюме',
 			id: 6,
+			path: '/resume',
 		}
 	],
 	logo: {

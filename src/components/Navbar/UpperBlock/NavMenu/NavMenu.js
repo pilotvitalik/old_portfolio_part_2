@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './NavMenu.module.css';
 
 class NavMenu extends React.Component{
@@ -14,7 +15,7 @@ class NavMenu extends React.Component{
 		const listItems = list.map((item) =>
 			<li key={ item.id }>
 				<img src={ item.url } alt={ item.name }/>
-				<p>{ item.title }</p>
+				<NavLink to={ item.path }>{ item.title }</NavLink>
 			</li>
 		  );
 		return (
