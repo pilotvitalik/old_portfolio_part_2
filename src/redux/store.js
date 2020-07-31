@@ -27,10 +27,28 @@ import vkDark from '../img/iconSocial/vk_dark.png';
 let store = {
 	whiteImg : [
 		{
+			url: homeImg,
+			name: 'главная',
+			title: 'Главная',
+			id: 4,
+		},
+		{
 			url: aboutImg,
 			name: 'обо мне',
 			title: 'Обо мне',
 			id: 1,
+		},
+		{
+			url: resumeImg,
+			name: 'резюме',
+			title: 'Резюме',
+			id: 6,
+		},
+		{
+			url: portfolioImg,
+			name: 'портфолио',
+			title: 'Портфолио',
+			id: 5,
 		},
 		{
 			url: blogImg,
@@ -44,32 +62,35 @@ let store = {
 			title: 'Контакты',
 			id: 3,
 		},
+	],
+	darkImg : [
 		{
-			url: homeImg,
+			url: homeImgDark,
 			name: 'главная',
 			title: 'Главная',
 			id: 4,
+			path: '/',
 		},
-		{
-			url: portfolioImg,
-			name: 'портфолио',
-			title: 'Портфолио',
-			id: 5,
-		},
-		{
-			url: resumeImg,
-			name: 'резюме',
-			title: 'Резюме',
-			id: 6,
-		}
-	],
-	darkImg : [
 		{
 			url: aboutImgDark,
 			name: 'обо мне',
 			title: 'Обо мне',
 			id: 1,
 			path: '/about_me',
+		},
+		{
+			url: resumeImgDark,
+			name: 'резюме',
+			title: 'Резюме',
+			id: 6,
+			path: '/resume',
+		},
+		{
+			url: portfolioImgDark,
+			name: 'портфолио',
+			title: 'Портфолио',
+			id: 5,
+			path: '/portfolio',
 		},
 		{
 			url: blogImgDark,
@@ -85,27 +106,6 @@ let store = {
 			id: 3,
 			path: '/contacts',
 		},
-		{
-			url: homeImgDark,
-			name: 'главная',
-			title: 'Главная',
-			id: 4,
-			path: '/',
-		},
-		{
-			url: portfolioImgDark,
-			name: 'портфолио',
-			title: 'Портфолио',
-			id: 5,
-			path: '/portfolio',
-		},
-		{
-			url: resumeImgDark,
-			name: 'резюме',
-			title: 'Резюме',
-			id: 6,
-			path: '/resume',
-		}
 	],
 	logo: {
 		url: logo,

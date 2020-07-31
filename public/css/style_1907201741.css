@@ -21,3 +21,6 @@ body,
 p{
     margin: 0;
 }
+.activeNavBar{
+    color: #fff;
+}

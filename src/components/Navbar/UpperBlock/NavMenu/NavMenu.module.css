@@ -27,9 +27,9 @@ ul li img{
 	position: relative;
 	width: auto;
 	height: 20px;
-	margin-left: 14.5px;
+	margin-left: 25.5px;
 }
-ul li p{
+ul li a{
 	display: inline-block;
 	position: relative;
 	width: auto;
@@ -40,6 +40,7 @@ ul li p{
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	text-decoration: none;
 }
 ul li:hover{
 	cursor: pointer;
