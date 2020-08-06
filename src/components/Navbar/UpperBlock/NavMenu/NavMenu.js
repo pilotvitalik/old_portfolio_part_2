@@ -1,32 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Item } from './Item/Item.js';
 import './NavMenu.module.css';
 
 class NavMenu extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			items: this.props.navMenu
+			items: this.props.navMenu,	
 		};
-		this.changeImg = this.changeImg.bind(this);
-	}
-
-	changeImg(e){
-		this.props.onChangeImg();
 	}
 
 	render(){
-		console.log(this.state.items);
 		const list = this.state.items;
-		const listItems = list.map((item) =>
-			<li key={ item.id }>
-				<img src={ item.url } alt={ item.name }/>
-				<NavLink exact to={ item.path } activeClassName='activeNavBar' onClick={ this.changeImg }>{ item.title }</NavLink>
-			</li>
-		  );
+		const listItems = list.map((item) =>{
+			if (window.location.pathname === item[0]){
+				console.log('равно');
+				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].whiteImg } url={ item[0] }/>
+			} else {
+				console.log('неравно');
+				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].darkImg } url={ item[0] }/>
+			}
+			
+		});
 		return (
 			<ul>
-				{listItems}
+				{ listItems }
 			</ul>
 		);
 	}

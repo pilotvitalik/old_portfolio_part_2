@@ -25,87 +25,79 @@ import youtubeDark from '../img/iconSocial/youtube_dark.png';
 import vkDark from '../img/iconSocial/vk_dark.png';
 
 let store = {
-	whiteImg : [
-		{
-			url: homeImg,
-			name: 'главная',
-			title: 'Главная',
-			id: 4,
-		},
-		{
-			url: aboutImg,
-			name: 'обо мне',
-			title: 'Обо мне',
-			id: 1,
-		},
-		{
-			url: resumeImg,
-			name: 'резюме',
-			title: 'Резюме',
-			id: 6,
-		},
-		{
-			url: portfolioImg,
-			name: 'портфолио',
-			title: 'Портфолио',
-			id: 5,
-		},
-		{
-			url: blogImg,
-			name: 'блог',
-			title: 'Блог',
-			id: 2,
-		},
-		{
-			url: contactImg,
-			name: 'контакты',
-			title: 'Контакты',
-			id: 3,
-		},
-	],
-	darkImg : [
-		{
-			url: homeImgDark,
-			name: 'главная',
-			title: 'Главная',
-			id: 4,
-			path: '/',
-		},
-		{
-			url: aboutImgDark,
-			name: 'обо мне',
-			title: 'Обо мне',
-			id: 1,
-			path: '/about_me',
-		},
-		{
-			url: resumeImgDark,
-			name: 'резюме',
-			title: 'Резюме',
-			id: 6,
-			path: '/resume',
-		},
-		{
-			url: portfolioImgDark,
-			name: 'портфолио',
-			title: 'Портфолио',
-			id: 5,
-			path: '/portfolio',
-		},
-		{
-			url: blogImgDark,
-			name: 'блог',
-			title: 'Блог',
-			id: 2,
-			path: '/blog',
-		},
-		{
-			url: contactImgDark,
-			name: 'контакты',
-			title: 'Контакты',
-			id: 3,
-			path: '/contacts',
-		},
+	navMenuList: [
+		[
+			'/',
+			{
+				whiteImg: homeImg,
+				darkImg: homeImgDark,
+			},
+			{
+				name: 'главная',
+				title: 'Главная',
+				id: 4,
+			},
+		],
+		[
+			'/about_me',
+			{
+				whiteImg: aboutImg,
+				darkImg: aboutImgDark,
+			},
+			{
+				name: 'обо мне',
+				title: 'Обо мне',
+				id: 1,
+			},
+		],
+		[
+			'/resume',
+			{
+				whiteImg: resumeImg,
+				darkImg: resumeImgDark,
+			},
+			{
+				name: 'резюме',
+				title: 'Резюме',
+				id: 6,
+			},
+		],
+		[
+			'/portfolio',
+			{
+				whiteImg: portfolioImg,
+				darkImg: portfolioImgDark,
+			},
+			{
+				name: 'портфолио',
+				title: 'Портфолио',
+				id: 5,
+			},
+		],
+		[
+			'/blog',
+			{
+				whiteImg: blogImg,
+				darkImg: blogImgDark,
+			},
+			{
+				name: 'блог',
+				title: 'Блог',
+				id: 2,
+			},
+		],
+		[
+			'/contacts',
+			{
+				whiteImg: contactImg,
+				darkImg: contactImgDark,
+			},
+			{
+				name: 'контакты',
+				title: 'Контакты',
+				id: 3,
+			},
+		],
 	],
 	logo: {
 		url: logo,

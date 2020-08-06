@@ -7,23 +7,16 @@ class UpperBlock extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			img: this.props.navBar.darkImg,
 			logo: this.props.navBar.logo, 
+			list: this.props.navBar.navMenuList,
 		};
-		this.handleChangeImg = this.handleChangeImg.bind(this);
-	}
-
-	handleChangeImg(e){
-		this.setState({
-			img: this.props.navBar.whiteImg,
-		});
 	}
 
 	render(){
 		return(
 			<div className={ style.upperBlock }>
 				<Logo image={ this.state.logo }/> 
-				<NavMenu navMenu={ this.state.img } onChangeImg={ this.handleChangeImg }/>
+				<NavMenu navMenu={ this.state.list }/>
 			</div>
 		);
 	}

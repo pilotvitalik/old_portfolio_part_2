@@ -6,6 +6,7 @@
 	position: relative;
 	width: 200px;
 	height: 60%;
+	min-height: 476px;
 	background: #17181B;
 }
 @media (min-width: 768px){
