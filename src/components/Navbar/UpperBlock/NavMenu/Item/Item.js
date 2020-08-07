@@ -12,11 +12,17 @@ class Item extends React.Component{
 		};
 	}
 
+	componentDidMounte(){
+		console.log('element mount');
+	}
+
+	componentDidUpdate(){
+		console.log('element update');
+	}
 
 	render(){
-		let img;
 		return(
-			<li>
+			<li onClick={ this.handleChangeItem }>
 				<img src={ this.state.img } alt={ this.state.titleImg }/>				
 				<NavLink exact to={ this.state.path } activeClassName='activeNavBar'>{ this.state.title }</NavLink>
 			</li>

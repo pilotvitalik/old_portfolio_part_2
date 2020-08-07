@@ -14,11 +14,9 @@ class NavMenu extends React.Component{
 		const list = this.state.items;
 		const listItems = list.map((item) =>{
 			if (window.location.pathname === item[0]){
-				console.log('равно');
-				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].whiteImg } url={ item[0] }/>
+				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].whiteImg } url={ item[0] } onChamgeItem={ this.handleChangeMenuItem }/>
 			} else {
-				console.log('неравно');
-				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].darkImg } url={ item[0] }/>
+				return <Item key={ item[2].id } data={ item[2] } activeImg={ item[1].darkImg } url={ item[0] } onChamgeItem={ this.handleChangeMenuItem }/>
 			}
 			
 		});

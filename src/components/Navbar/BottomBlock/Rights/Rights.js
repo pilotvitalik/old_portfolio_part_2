@@ -12,7 +12,6 @@ class Rights extends React.Component{
 	};
 
 	render(){
-		console.log(this.props.rights)
 		return(
 			<div className={ style.rights }>
 				<p>{ this.state.text }</p>
