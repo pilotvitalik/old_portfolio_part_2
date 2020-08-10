@@ -1,9 +1,17 @@
 import React from 'react';
+import style from './contact.module.css';
+import { Title } from './Title/title.js';
+import { SendForm } from './SendForm/SendForm.js';
+import { OtherContacts } from './OtherContacts/OtherContacts.js';
 
 class Contact extends React.Component{
 	render(){
 		return(
-			<h3>This is page Contact</h3>
+			<div className={ style.contact }>
+				<Title/>
+				<SendForm/>
+				<OtherContacts/>
+			</div>
 		);
 	}
 }
