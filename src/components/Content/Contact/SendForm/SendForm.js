@@ -1,14 +1,19 @@
 import React from 'react';
 import style from './sendForm.module.css';
-import { Form } from './Form/Form.js';
-import { SendBtn } from './SendBtn/SendBtn.js';
 
 class SendForm extends React.Component{
 	render(){
 		return(
 			<div className={ style.sendForm }>
-				<Form/>
-				<SendBtn/>
+				<h3>Обратная связь</h3>
+				<form>
+					<div>
+						<input type='text' placeholder='Введите имя'/>
+						<input type='text' placeholder='Email'/>
+					</div>
+					<textarea placeholder='Как я могу помочь Вам?'></textarea>
+					<button type='button'>Отправить</button>
+				</form>
 			</div>
 		);
 	}

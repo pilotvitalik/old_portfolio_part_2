@@ -10,6 +10,13 @@ import { Blog } from './Blog/Blog.js';
 import { Contact } from './Contact/Contact.js';
 
 class Content extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			contact: this.props.content.contactIcon,
+		}
+	}
+
 	render(){
 		return(
 		<div className={ style.wrapper }>
@@ -41,7 +48,7 @@ class Content extends React.Component{
 		    		<Blog/>
 		    	</Route>
 		    	<Route path='/contacts'>
-		    		<Contact/>
+		    		<Contact contact={ this.state.contact }/>
 		    	</Route>
 		    </Switch>
 		  </div>

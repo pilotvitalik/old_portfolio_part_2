@@ -24,6 +24,8 @@ import twitterDark from '../img/iconSocial/twitter_dark.png';
 import youtubeDark from '../img/iconSocial/youtube_dark.png';
 import vkDark from '../img/iconSocial/vk_dark.png';
 
+import contactIcon from '../img/iconNavbar/contactPage.svg';
+
 let store = {
 	navMenuList: [
 		[
@@ -152,7 +154,11 @@ let store = {
 		year: '2020',
 		sign: '&copy;',
 		text: 'Все права защищены',
-	}
+	},
+	contactIcon: {
+		url: contactIcon,
+		name: 'конверт',
+	},
 }
 
 export { store };

@@ -1,0 +1,39 @@
+.sendForm{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width: 98%;
+	height: auto;
+}
+.sendForm h3{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: auto;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #6B6C6D;
+}
+.sendForm h3:before{
+	content: '';
+	position: absolute;
+	width: 105%;
+	height: 7px;
+	left: -7.5px;
+	bottom: 0;
+	border: 2px solid #00A3E1;
+}
+@media (min-width: 992px){
+	.sendForm{
+		width: 95%;
+	}
+}
+@media (min-width: 1200px){
+	.sendForm{
+		width: 1040px;
+	}
+}

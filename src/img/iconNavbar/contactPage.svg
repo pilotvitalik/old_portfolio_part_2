@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="contactPage.svg"
+   class=""
+   height="512px"
+   width="512px"
+   xml:space="preserve"
+   style="enable-background:new 0 0 477.867 477.867;"
+   viewBox="0 0 477.867 477.867"
+   y="0px"
+   x="0px"
+   id="Capa_1"
+   version="1.1"><metadata
+   id="metadata118"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs116" /><sodipodi:namedview
+   inkscape:current-layer="Capa_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="0"
+   inkscape:window-x="1366"
+   inkscape:cy="256"
+   inkscape:cx="256"
+   inkscape:zoom="1.640625"
+   showgrid="false"
+   id="namedview114"
+   inkscape:window-height="1024"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" /><g
+   style="fill:#00a3e1;fill-opacity:1"
+   id="g111"
+   transform="matrix(0.99 0 0 0.99 2.38933 2.38933)"><g
+     style="fill:#00a3e1;fill-opacity:1"
+     id="g109">
+	<g
+   style="fill:#00a3e1;fill-opacity:1"
+   id="g107">
+		<path
+   style="fill:#00a3e1;fill-opacity:1"
+   id="path105"
+   fill="#777777"
+   data-old_color="#000000"
+   class="active-path"
+   data-original="#000000"
+   d="M460.8,68.267H17.067C7.641,68.267,0,75.908,0,85.333v307.2c0,9.426,7.641,17.067,17.067,17.067H460.8    c9.426,0,17.067-7.641,17.067-17.067v-307.2C477.867,75.908,470.226,68.267,460.8,68.267z M432.811,102.4L238.933,251.529    L45.056,102.4H432.811z M443.733,375.467h-409.6V137.062L228.54,286.6c6.13,4.707,14.657,4.707,20.787,0l194.406-149.538V375.467z    " />
+	</g>
+</g></g> </svg>

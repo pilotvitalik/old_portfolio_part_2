@@ -9,9 +9,9 @@ class App extends React.Component{
 	render(){
 		return(
 			<Router>
-				<div className={styles.wrapper}>
-				  <Navbar navBar={store}/>
-				  <Content />
+				<div className={ styles.wrapper }>
+				  <Navbar navBar={ store }/>
+				  <Content content={ store }/>
 				</div>
 			</Router>
 		);
