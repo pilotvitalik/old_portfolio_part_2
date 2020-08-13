@@ -5,13 +5,25 @@ class SendForm extends React.Component{
 	render(){
 		return(
 			<div className={ style.sendForm }>
-				<h3>Обратная связь</h3>
+				<div>
+					<h3>Обратная связь</h3>
+					<span></span>
+				</div>
 				<form>
 					<div>
-						<input type='text' placeholder='Введите имя'/>
-						<input type='text' placeholder='Email'/>
+						<div className={ style.upperInput }>
+							<input id='feedbackName' type='text'/>
+							<label for='feedbackName'>Введите имя</label>
+						</div>
+						<div className={ style.upperInput }>
+							<input id='feedbackMail' type='text'/>
+							<label for='feedbackMail'>Email</label>
+						</div>
 					</div>
-					<textarea placeholder='Как я могу помочь Вам?'></textarea>
+					<div className={ style.message }>
+						<textarea id='feedbackMes' rows='9'></textarea>
+						<label for='feedbackMes'>Как я могу помочь Вам?</label>
+					</div>
 					<button type='button'>Отправить</button>
 				</form>
 			</div>
