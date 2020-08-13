@@ -13,7 +13,7 @@ class Content extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			contact: this.props.content.contactIcon,
+			contactPage: this.props.content.contactPage,
 		}
 	}
 
@@ -48,7 +48,7 @@ class Content extends React.Component{
 		    		<Blog/>
 		    	</Route>
 		    	<Route path='/contacts'>
-		    		<Contact contact={ this.state.contact }/>
+		    		<Contact contactPage={ this.state.contactPage }/>
 		    	</Route>
 		    </Switch>
 		  </div>

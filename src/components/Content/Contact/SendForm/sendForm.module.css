@@ -48,6 +48,7 @@ form{
 	position: relative;
 	width: 100%;
 	height: auto;
+	margin-bottom: 50px;
 }
 form>div{
 	display: flex;

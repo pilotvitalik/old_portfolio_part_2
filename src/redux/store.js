@@ -24,7 +24,9 @@ import twitterDark from '../img/iconSocial/twitter_dark.png';
 import youtubeDark from '../img/iconSocial/youtube_dark.png';
 import vkDark from '../img/iconSocial/vk_dark.png';
 
-import contactIcon from '../img/iconNavbar/contactPage.svg';
+import contactIcon from '../img/contactPage/mail.svg';
+import pointMap from '../img/contactPage/address.svg';
+import phone from '../img/contactPage/phone.svg';
 
 let store = {
 	navMenuList: [
@@ -155,10 +157,35 @@ let store = {
 		sign: '&copy;',
 		text: 'Все права защищены',
 	},
-	contactIcon: {
-		url: contactIcon,
-		name: 'конверт',
-	},
+	contactPage: [
+		{
+			contactIcon: {
+				url: contactIcon,
+				name: 'конверт',
+			},
+		},
+		[
+			{
+				id: 1,
+				contact: 'itvkip@yandex.ru',
+				img: contactIcon,
+				titleImg: 'e-mail',
+			},
+			{
+				id: 2,
+				contact: '190000, Санкт-Петербург',
+				img: pointMap,
+				titleImg: 'адрес',
+			},
+			{
+				id: 3,
+				contact: '+7 (921) 906-49-13',
+				img: phone,
+				titleImg: 'телефон',
+			},
+		]
+	]
+	
 }
 
 export { store };

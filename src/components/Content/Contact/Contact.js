@@ -8,16 +8,17 @@ class Contact extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			contact: this.props.contact,
+			mailIcon: this.props.contactPage[0].contactIcon,
+			otherContacts: this.props.contactPage[1],
 		}
 	}
 
 	render(){
 		return(
 			<div className={ style.contact }>
-				<Title icon={ this.state.contact }/>
+				<Title icon={ this.state.mailIcon }/>
 				<SendForm/>
-				<OtherContacts/>
+				<OtherContacts contact={ this.state.otherContacts }/>
 			</div>
 		);
 	}

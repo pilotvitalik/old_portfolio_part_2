@@ -13,16 +13,16 @@ class SendForm extends React.Component{
 					<div>
 						<div className={ style.upperInput }>
 							<input id='feedbackName' type='text'/>
-							<label for='feedbackName'>Введите имя</label>
+							<label htmlFor='feedbackName'>Введите имя</label>
 						</div>
 						<div className={ style.upperInput }>
 							<input id='feedbackMail' type='text'/>
-							<label for='feedbackMail'>Email</label>
+							<label htmlFor='feedbackMail'>Email</label>
 						</div>
 					</div>
 					<div className={ style.message }>
 						<textarea id='feedbackMes' rows='9'></textarea>
-						<label for='feedbackMes'>Как я могу помочь Вам?</label>
+						<label htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
 					<button type='button'>Отправить</button>
 				</form>
