@@ -64,8 +64,7 @@
 	display: none;
 }
 @media (min-width: 768px){
-	.wrapper,
-	.wrapper>div{
+	.wrapper{
 		width: 85.2%;
 	}
 }

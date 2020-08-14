@@ -160,6 +160,7 @@ let store = {
 	contactPage: [
 		{
 			contactIcon: {
+				titlePage: 'Контакты',
 				url: contactIcon,
 				name: 'конверт',
 			},
