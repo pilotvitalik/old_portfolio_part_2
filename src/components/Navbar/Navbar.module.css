@@ -1,5 +1,5 @@
 .leftNavbar{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	position: absolute;
 	width: 201px;
@@ -9,6 +9,7 @@
 }
 @media (min-width: 768px){
 	.leftNavbar{
+		display: flex;
 		width: 200px;
 		position: relative;
 	}

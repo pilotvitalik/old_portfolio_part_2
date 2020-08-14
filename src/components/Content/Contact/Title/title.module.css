@@ -5,6 +5,7 @@
 	align-items: center;
 	width: 98%;
 	height: 50px;
+	margin-top: 15px;
 	border-bottom: 1px dashed rgba(255, 255, 255, 0.2) ;
 }
 .title h3{
