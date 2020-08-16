@@ -171,6 +171,12 @@ let store = {
         name: 'конверт',
       },
     },
+    {
+      button:{
+        title: 'Отправить',
+        type: 'button',
+      }
+    },
     [
       {
         id: 1,
@@ -200,6 +206,39 @@ let store = {
         name: 'обо мне',
       },
     },
+    {
+      about: {
+        titleArticle: 'Frontend Developer',
+        text: 'Lorem ipsum Esse consectetur eiusmod qui in dolore magna labore cillum occaecat elit sed non et ullamco fugiat occaecat et deserunt nulla culpa incididunt commodo tempor adipisicing dolore minim ut excepteur consectetur do nostrud incididunt dolore et ullamco proident sint ut excepteur do dolore cupidatat mollit tempor nisi laboris ad sed laborum incididunt fugiat in in id cupidatat exercitation ad et non fugiat minim pariatur in ut magna dolore ut deserunt pariatur do ex et in in elit tempor aliquip ut commodo duis aliqua aliquip cupidatat dolore irure dolor pariatur mollit aliqua et sed nisi ut qui nisi incididunt incididunt occaecat elit aliquip consectetur aliquip ea id do tempor velit sed ea sed sit labore ex velit incididunt esse velit pariatur nulla sint id adipisicing duis sed est dolore sint officia esse et in qui reprehenderit veniam laborum amet ea est ea non cillum nulla dolor amet esse ullamco nulla nulla incididunt id ullamco in cillum consequat id officia elit adipisicing duis nisi in eiusmod laborum ad sit ut sint dolore dolore ut adipisicing sunt aliqua reprehenderit irure deserunt sit ex culpa nisi sed in velit in sit ad quis deserunt tempor esse qui dolor aute anim in irure in commodo velit occaecat sit enim laboris enim velit duis duis commodo pariatur duis ex id nisi enim dolore aute fugiat.',
+        wishes: 'С наилучшими пожеланиями, Виталий Кожушко',
+      },
+      personalInfo: {
+        titleArticle: 'Персональная информация',
+        data: [
+          {
+            name: 'ФИО:',
+            val: 'Виталий Кожушко'
+          },
+          {
+            name: 'Возраст:',
+            val: '33'
+          },
+          {
+            name: 'Адрес:',
+            val: '190000, Санкт-Петербург'
+          },
+          {
+            name: 'Эл. почта:',
+            val: 'itvkip@yandex.ru'
+          },
+          {
+            name: 'Телефон',
+            val: '+7 (921) 906-49-13'
+          },
+        ],
+        CVLink: '',
+      },
+    }
   ],  
 }
 

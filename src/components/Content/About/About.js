@@ -1,13 +1,15 @@
 import React from 'react';
-import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import style from './about.module.css';
+import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
+import { Description } from './Description/Description.js';
 
 
 class About extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			userTitle: this.props.about[0].aboutIcon
+			userTitle: this.props.about[0].aboutIcon,
+			descript: this.props.about[1],
 		};
 	}
 
@@ -15,6 +17,7 @@ class About extends React.Component{
 		return(
 			<div className={ style.aboutPage }>
 				<HeaderPage icon={ this.state.userTitle }/>
+				<Description descript={ this.state.descript }/>
 			</div>
 		);
 	}

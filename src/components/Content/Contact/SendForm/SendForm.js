@@ -1,7 +1,15 @@
 import React from 'react';
 import style from './sendForm.module.css';
+import { Button } from '../../../Common/Button/Button.js';
 
 class SendForm extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			button: this.props.btn,
+		};
+	}
+
 	render(){
 		return(
 			<div className={ style.sendForm }>
@@ -24,7 +32,7 @@ class SendForm extends React.Component{
 						<textarea id='feedbackMes' rows='9'></textarea>
 						<label htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
-					<button type='button'>Отправить</button>
+					<Button btn={ this.state.button }/>
 				</form>
 			</div>
 		);
