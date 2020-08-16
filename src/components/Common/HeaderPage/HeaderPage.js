@@ -10,11 +10,13 @@ class HeaderPage extends React.Component{
 	}
 
 	render(){
+		console.log(this.props);
 		return(
 			<div className={ style.title }>
 				<h3>{ this.state.image.titlePage }</h3>
 				<img src={ this.state.image.url } alt={ this.state.image.name }/>
 			</div>
+			
 		);
 	}
 }

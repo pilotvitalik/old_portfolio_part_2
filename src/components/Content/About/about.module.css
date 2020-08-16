@@ -1,0 +1,11 @@
+.aboutPage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	background: #6B6C6D;
+}
