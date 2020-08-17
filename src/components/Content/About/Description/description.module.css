@@ -1,0 +1,16 @@
+.descript{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #6B6C6D;
+}
+@media (min-width: 768px){
+	.descript{
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+}

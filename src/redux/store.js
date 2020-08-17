@@ -217,22 +217,27 @@ let store = {
         titleArticle: 'Персональная информация',
         data: [
           {
+            id: 'pers_1',
             name: 'ФИО:',
             val: 'Виталий Кожушко'
           },
           {
+            id: 'pers_2',
             name: 'Возраст:',
             val: '33'
           },
           {
+            id: 'pers_3',
             name: 'Адрес:',
             val: '190000, Санкт-Петербург'
           },
           {
+            id: 'pers_4',
             name: 'Эл. почта:',
             val: 'itvkip@yandex.ru'
           },
           {
+            id: 'pers_5',
             name: 'Телефон',
             val: '+7 (921) 906-49-13'
           },
