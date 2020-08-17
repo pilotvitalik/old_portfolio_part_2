@@ -175,6 +175,7 @@ let store = {
       button:{
         title: 'Отправить',
         type: 'button',
+        link: '',
       }
     },
     [
@@ -236,7 +237,11 @@ let store = {
             val: '+7 (921) 906-49-13'
           },
         ],
-        CVLink: '',
+        button:{
+          title: 'Скачать резюме',
+          type: 'button',
+          link: '',
+        }
       },
     }
   ],  

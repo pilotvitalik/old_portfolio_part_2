@@ -6,6 +6,7 @@ class AboutMe extends React.Component{
 	}
 
 	render(){
+		console.log(this.props.about)
 		return(
 			<p>This is AboutMe</p>
 		);

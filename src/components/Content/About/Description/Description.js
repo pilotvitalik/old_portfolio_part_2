@@ -5,14 +5,17 @@ import { PersonalInfo } from './PersonalInfo/PersonalInfo.js';
 class Description extends React.Component{
 	constructor(props){
 		super(props);
+		this.state = {
+			about: this.props.descript.about,
+			personal: this.props.descript.personalInfo,
+		};
 	}
 
 	render(){
-		console.log(this.props.descript);
 		return(
 			<div>
-				<AboutMe/>
-				<PersonalInfo/>
+				<AboutMe about={ this.state.about }/>
+				<PersonalInfo personal={ this.state.personal }/>
 			</div>
 		);
 	}
