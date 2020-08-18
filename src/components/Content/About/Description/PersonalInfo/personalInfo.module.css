@@ -50,4 +50,15 @@
 	.personInfo>div{
 		flex-direction: column;
 	}
+	.personInfo h3{
+		margin-top: 25px;
+	}
+}
+@media (min-width: 1200px){
+	.personInfo{
+		padding-left: 2.5%;
+	}
+	.personInfo h3{
+		text-align: left;
+	}
 }

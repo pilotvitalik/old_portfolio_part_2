@@ -1,22 +1,21 @@
 import React from 'react';
 import style from './sendForm.module.css';
 import { Button } from '../../../Common/Button/Button.js';
+import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 
 class SendForm extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
 			button: this.props.btn,
+			titleSection: this.props.title,
 		};
 	}
 
 	render(){
 		return(
 			<div className={ style.sendForm }>
-				<div>
-					<h3>Обратная связь</h3>
-					<span></span>
-				</div>
+				<TitleSection title={ this.state.titleSection }/>
 				<form>
 					<div>
 						<div className={ style.upperInput }>

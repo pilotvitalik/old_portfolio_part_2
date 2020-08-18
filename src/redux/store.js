@@ -197,7 +197,10 @@ let store = {
         img: phone,
         titleImg: 'телефон',
       },
-    ]
+    ],
+    {
+      title:'Обратная связь', 
+    }
   ],
   aboutPage:[
     {
@@ -248,6 +251,9 @@ let store = {
           link: '',
         }
       },
+    },
+    {
+      title:'Услуги', 
     }
   ],  
 }

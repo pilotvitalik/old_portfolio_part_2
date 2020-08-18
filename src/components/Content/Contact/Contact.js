@@ -11,6 +11,7 @@ class Contact extends React.Component{
 			mailIcon: this.props.contactPage[0].contactIcon,
 			otherContacts: this.props.contactPage[2],
 			button: this.props.contactPage[1].button,
+			titleSection: this.props.contactPage[3].title,
 		}
 	}
 
@@ -18,7 +19,7 @@ class Contact extends React.Component{
 		return(
 			<div className={ style.contact }>
 				<HeaderPage icon={ this.state.mailIcon }/>
-				<SendForm btn={ this.state.button }/>
+				<SendForm btn={ this.state.button } title={ this.state.titleSection }/>
 				<OtherContacts contact={ this.state.otherContacts }/>
 			</div>
 		);

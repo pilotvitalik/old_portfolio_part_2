@@ -12,6 +12,12 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
+		align-items: flex-start;
 		width: 95%;
+	}
+}
+@media (min-width: 1200px){
+	.descript{
+		width: 1040px;
 	}
 }

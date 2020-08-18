@@ -7,40 +7,6 @@
 	width: 98%;
 	height: auto;
 }
-.sendForm>div{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	width: auto;
-	height: auto;
-	padding-bottom: 10px;
-	margin: 50px 0;
-}
-.sendForm>div h3{
-	display: inline-block;
-	position: relative;
-	width: auto;
-	height: auto;
-	padding: 0 5px;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
-	font-weight: 600;
-	text-transform: uppercase;
-	line-height: 25px;
-	background: #6B6C6D;
-	z-index: 1;
-}
-.sendForm>div span{
-	display: inline-block;
-	position: absolute;
-	width: 105%;
-	height: 7px;
-	left: -7.5px;
-	bottom: 8px;
-	background: transparent;
-	border: 2px solid #00A3E1;
-}
 form{
 	display: flex;
 	flex-direction: column;
