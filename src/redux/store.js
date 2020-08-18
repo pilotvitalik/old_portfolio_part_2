@@ -218,22 +218,22 @@ let store = {
         data: [
           {
             id: 'pers_1',
-            name: 'ФИО:',
+            name: 'ФИО',
             val: 'Виталий Кожушко'
           },
           {
             id: 'pers_2',
-            name: 'Возраст:',
+            name: 'Возраст',
             val: '33'
           },
           {
             id: 'pers_3',
-            name: 'Адрес:',
+            name: 'Адрес',
             val: '190000, Санкт-Петербург'
           },
           {
             id: 'pers_4',
-            name: 'Эл. почта:',
+            name: 'Эл. почта',
             val: 'itvkip@yandex.ru'
           },
           {

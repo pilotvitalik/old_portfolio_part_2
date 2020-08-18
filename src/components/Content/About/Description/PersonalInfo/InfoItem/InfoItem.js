@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './infoItem.module.css';
 
 class InfoItem extends React.Component{
 	constructor(props){
@@ -11,8 +12,11 @@ class InfoItem extends React.Component{
 
 	render(){
 		return(
-			<div>
-				<p>{ this.state.title }</p>
+			<div class={ style.infoBlock }>
+				<div>
+					<p>{ this.state.title }</p>
+					<p>:</p>
+				</div>
 				<p>{ this.state.value }</p>
 			</div>
 		);

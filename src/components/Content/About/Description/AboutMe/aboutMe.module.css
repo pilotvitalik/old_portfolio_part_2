@@ -30,3 +30,8 @@
 	margin: 20px 0;
 	text-align: left;
 }
+@media (min-width: 992px){
+	.about{
+		width: 60%;
+	}
+}

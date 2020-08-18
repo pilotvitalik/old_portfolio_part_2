@@ -1,0 +1,47 @@
+.infoBlock,
+.infoBlock>div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.infoBlock>div{
+	width: auto;
+	margin-bottom: 0;
+	margin-right: 7px;
+}
+p{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: auto;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.infoBlock>div p{
+	font-weight: 600;
+}
+.infoBlock>div p:first-child:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	margin-right: 5px;
+	background: #00A3E1;
+}
+@media (min-width: 576px){
+	.infoBlock{
+		width: 50%;
+	}
+}
+@media (min-width: 992px){
+	.infoBlock{
+		width: 100%;
+	}
+}

@@ -7,10 +7,11 @@
 	height: auto;
 	background: #6B6C6D;
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
 	.descript{
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: center;
+		justify-content: space-between;
+		width: 95%;
 	}
 }

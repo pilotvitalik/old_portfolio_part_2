@@ -21,7 +21,9 @@ class PersonalInfo extends React.Component{
 		return(
 			<div className={ style.personInfo }>
 				<h3>{ this.state.title }</h3>
-				{ persItem }
+				<div>
+					{ persItem }
+				</div>
 				<Button btn={ this.state.btn }/>
 			</div>
 		);

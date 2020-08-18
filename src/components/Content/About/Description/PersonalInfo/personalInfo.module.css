@@ -1,10 +1,15 @@
-.personInfo{
+.personInfo,
+.personInfo>div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 	width: 90%;
 	height: auto;
+	padding-bottom: 20px;
+}
+.personInfo>div{
+	width: 100%;
 }
 .personInfo h3, 
 .personInfo p{
@@ -19,6 +24,30 @@
 }
 
 .personInfo h3{
+	width: 100%;
 	font-size: 25px;
 	text-align: center;
+	margin-bottom: 20px;
+}
+@media (min-width: 576px){
+	.personInfo,
+	.personInfo>div{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	.personInfo h3{
+		align-self: center;
+	}
+	.personInfo>div .infoBlock:last-child{
+		width: 100%;
+	}
+}
+@media (min-width: 992px){
+	.personInfo{
+		width: 38%;
+	}
+	.personInfo>div{
+		flex-direction: column;
+	}
 }
