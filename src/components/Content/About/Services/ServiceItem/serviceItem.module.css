@@ -10,8 +10,8 @@
 .servItem img{
 	display: block;
 	position: relative;
-	width: 50px;
-	height: auto;
+	width: auto;
+	height: 50px;
 }
 .servItem h5,
 .servItem p{

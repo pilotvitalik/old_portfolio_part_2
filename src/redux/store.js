@@ -30,11 +30,11 @@ import logo from '../img/logo/logo.jpg';
   import contactIcon from '../img/contactPage/mail.svg';
   import pointMap from '../img/contactPage/address.svg';
   import phone from '../img/contactPage/phone.svg';
-  import notebook from '../img/contactPage/services/notebook.svg';
-  import responsive from '../img/contactPage/services/responsive.svg';
 
 // icons for about page
 import user from '../img/aboutPage/user.svg';
+import notebook from '../img/aboutPage/services/notebook.svg';
+import responsive from '../img/aboutPage/services/responsive.svg';
 
 let store = {
   navMenuList: [
