@@ -30,6 +30,8 @@ import logo from '../img/logo/logo.jpg';
   import contactIcon from '../img/contactPage/mail.svg';
   import pointMap from '../img/contactPage/address.svg';
   import phone from '../img/contactPage/phone.svg';
+  import notebook from '../img/contactPage/services/notebook.svg';
+  import responsive from '../img/contactPage/services/responsive.svg';
 
 // icons for about page
 import user from '../img/aboutPage/user.svg';
@@ -253,7 +255,23 @@ let store = {
       },
     },
     {
-      title:'Услуги', 
+      title:'Услуги',
+      data: [
+        {
+          id: 'serv_1',
+          img: notebook,
+          alt: 'Разработка',
+          title: 'Web программирование',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada viverra odio, eu tincidunt risus.',
+        },
+        {
+          id: 'serv_2',
+          img: responsive,
+          alt: 'Адаптив',
+          title: 'Адаптивный дизайн',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada viverra odio, eu tincidunt risus.',
+        }
+      ],
     }
   ],  
 }

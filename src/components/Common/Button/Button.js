@@ -12,7 +12,6 @@ class Button extends React.Component{
 	}
 
 	render(){
-		console.log(this.props);
 		if (this.state.type === 'button'){
 			return(
 				<button type={ this.state.type }>{ this.state.title }</button>

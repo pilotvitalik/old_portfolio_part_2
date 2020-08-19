@@ -12,7 +12,7 @@ class InfoItem extends React.Component{
 
 	render(){
 		return(
-			<div class={ style.infoBlock }>
+			<div className={ style.infoBlock }>
 				<div>
 					<p>{ this.state.title }</p>
 					<p>:</p>
