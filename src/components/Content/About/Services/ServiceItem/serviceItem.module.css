@@ -1,0 +1,40 @@
+.servItem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.servItem img{
+	display: block;
+	position: relative;
+	width: 50px;
+	height: auto;
+}
+.servItem h5,
+.servItem p{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 10px 0;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+.servItem p{
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+}
+@media (min-width: 576px){
+	.servItem{
+		width: 250px;
+	}
+	.servItem h5{
+		width: 100%;
+	}
+}

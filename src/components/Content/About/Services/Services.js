@@ -19,7 +19,9 @@ class Services extends React.Component{
 		return(
 			<div className={ style.services }>
 				<TitleSection title={ this.state.title }/>
-				{ serv }
+				<div>
+					{ serv }
+				</div>
 			</div>
 		);
 	}
