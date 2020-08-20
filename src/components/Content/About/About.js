@@ -4,6 +4,7 @@ import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { Description } from './Description/Description.js';
 import { Services } from './Services/Services.js';
 import { Clients } from './Clients/Clients.js';
+import { Testimonials } from './Testimonials/Testimonials.js';
 
 
 class About extends React.Component{
@@ -14,6 +15,7 @@ class About extends React.Component{
 			descript: this.props.about[1],
 			services: this.props.about[2],
 			clients: this.props.about[3],
+			testimonials: this.props.about[4],
 		};
 	}
 
@@ -24,6 +26,7 @@ class About extends React.Component{
 				<Description descript={ this.state.descript }/>
 				<Services service={ this.state.services }/>
 				<Clients client={ this.state.clients }/>
+				<Testimonials testimonial={ this.state.testimonials }/>
 			</div>
 		);
 	}

@@ -282,10 +282,22 @@ let store = {
           img: BJR,
           alt: 'БЖР',
         },
+      ],
+    },
+    {
+      title: 'Рекомендации',
+      data: [
         {
-          id: 'client_2',
-          img: BJR,
-          alt: 'БЖР',
+          id: 'testim_1',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at interdum diam. Etiam quam urna, aliquet laoreet neque nec, dapibus luctus enim. Nullam eu eros a dui malesuada hendrerit. Praesent.',
+          user_name: 'Kate Fox',
+          user_job: 'Digital Marketing Executive',
+        },
+        {
+          id: 'testim_2',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at interdum diam. Etiam quam urna, aliquet laoreet neque nec, dapibus luctus enim. Nullam eu eros a dui malesuada hendrerit. Praesent.',
+          user_name: 'Emma Jones',
+          user_job: 'Creative Director',
         },
       ],
     }

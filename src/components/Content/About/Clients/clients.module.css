@@ -1,15 +1,18 @@
 .clients{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 	width: 100%;
 	height: auto;
+	padding-bottom: 20px;
 	background: #6B6C6D;
 }
 .slider{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: nowrap;
 	position: relative;
 	width: 90%;
