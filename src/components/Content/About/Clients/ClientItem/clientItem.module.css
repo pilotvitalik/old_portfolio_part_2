@@ -1,0 +1,15 @@
+.clientItem{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 150px;
+	height: 100px;
+}
+.clientItem img{
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+}

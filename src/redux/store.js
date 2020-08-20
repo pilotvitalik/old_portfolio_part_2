@@ -32,9 +32,10 @@ import logo from '../img/logo/logo.jpg';
   import phone from '../img/contactPage/phone.svg';
 
 // icons for about page
-import user from '../img/aboutPage/user.svg';
-import notebook from '../img/aboutPage/services/notebook.svg';
-import responsive from '../img/aboutPage/services/responsive.svg';
+  import user from '../img/aboutPage/user.svg';
+  import notebook from '../img/aboutPage/services/notebook.svg';
+  import responsive from '../img/aboutPage/services/responsive.svg';
+  import BJR from '../img/aboutPage/clients/BJR.jpg';
 
 let store = {
   navMenuList: [
@@ -271,6 +272,21 @@ let store = {
           title: 'Адаптивный дизайн',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada viverra odio, eu tincidunt risus.',
         }
+      ],
+    },
+    {
+      title:'Клиенты',
+      data: [
+        {
+          id: 'client_1',
+          img: BJR,
+          alt: 'БЖР',
+        },
+        {
+          id: 'client_2',
+          img: BJR,
+          alt: 'БЖР',
+        },
       ],
     }
   ],  
