@@ -36,6 +36,7 @@ import logo from '../img/logo/logo.jpg';
   import notebook from '../img/aboutPage/services/notebook.svg';
   import responsive from '../img/aboutPage/services/responsive.svg';
   import BJR from '../img/aboutPage/clients/BJR.jpg';
+  import user_photo from '../img/aboutPage/testimonials/user_avatar.jpg'; 
 
 let store = {
   navMenuList: [
@@ -290,12 +291,14 @@ let store = {
         {
           id: 'testim_1',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at interdum diam. Etiam quam urna, aliquet laoreet neque nec, dapibus luctus enim. Nullam eu eros a dui malesuada hendrerit. Praesent.',
+          photo: user_photo,
           user_name: 'Kate Fox',
           user_job: 'Digital Marketing Executive',
         },
         {
           id: 'testim_2',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at interdum diam. Etiam quam urna, aliquet laoreet neque nec, dapibus luctus enim. Nullam eu eros a dui malesuada hendrerit. Praesent.',
+          photo: user_photo,
           user_name: 'Emma Jones',
           user_job: 'Creative Director',
         },
