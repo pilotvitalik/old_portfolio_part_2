@@ -1,0 +1,15 @@
+.desc{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #17181B;
+}
+.desc p{
+	display: inline-block;
+	position: relative;
+	width: 268px;
+	height: auto;
+	padding: 10px;
+}

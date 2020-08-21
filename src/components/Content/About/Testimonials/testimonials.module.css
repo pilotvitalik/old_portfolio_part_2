@@ -1,7 +1,28 @@
 .testim{
-	
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	background: #6B6C6D;
 }
 
 .slider{
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+}
+.wrapSlid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+	width: auto;
+	height: auto;
 }

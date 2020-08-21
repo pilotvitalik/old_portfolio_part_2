@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './testimonialItem.module.css';
 import { Description } from './Description/Description.js';
 import { User } from './User/User.js';
 
@@ -15,7 +16,7 @@ class TestimonialItem extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className={ style.item }>
 				<Description text={ this.state.text }/>
 				<User photo={ this.state.photo } name={ this.state.name } job={ this.state.job }/>
 			</div>

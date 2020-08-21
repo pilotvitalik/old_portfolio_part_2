@@ -21,11 +21,9 @@ class Testimonials extends React.Component{
 			<div className={ style.testim }>
 				<TitleSection title={ this.state.title }/>
 				<div className={ style.slider }>
-					<button type='button'>&lt;</button>
 					<div className={ style.wrapSlid }>
 						{ itemTestim }
 					</div>
-					<button type='button'>&gt;</button>
 				</div>
 			</div>
 		);

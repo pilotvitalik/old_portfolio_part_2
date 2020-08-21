@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './description.module.css';
 
 class Description extends React.Component{
 	constructor(props){
@@ -10,7 +11,7 @@ class Description extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className={ style.desc }>
 				<p>{ this.state.text }</p>
 			</div>
 		);
