@@ -19,6 +19,13 @@
 	border-right: 9px solid transparent;
 	border-top: 10px solid #17181B;
 }
+.desc:after{
+	content: '\f10d';
+	position: absolute;
+	font-size: 50px;
+	font-family: "Font Awesome 5 Free";
+	    font-weight: 600;
+}
 .desc p{
 	display: inline-block;
 	position: relative;

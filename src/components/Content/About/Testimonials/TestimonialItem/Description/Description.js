@@ -12,6 +12,7 @@ class Description extends React.Component{
 	render(){
 		return(
 			<div className={ style.desc }>
+			<i className="fas fa-quote-left"></i>
 				<p>{ this.state.text }</p>
 			</div>
 		);
