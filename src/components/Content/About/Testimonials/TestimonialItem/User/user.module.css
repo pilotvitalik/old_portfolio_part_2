@@ -1,3 +1,36 @@
 .userData{
-	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 76px;
+}
+.userData img{
+	display: block;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	top: 15px;
+	margin-left: 15px;
+	border-radius: 20px 0 20px 0;
+}
+.userData div{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.userData div p{
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+.userData div p:last-child{
+	font-size: 13px;
 }
