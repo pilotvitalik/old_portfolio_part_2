@@ -1,35 +1,28 @@
 .desc{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	position: relative;
 	width: 100%;
-	height: 130px;
+	height: auto;
+	min-height: 86px;
 	background: #17181B;
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
-.desc:before{
-	content: '';
-	position: absolute;
-	width: 0; 
-	height: 0;
-	bottom: -10px;
-	left: 36px;
-	border-left: 9px solid transparent;
-	border-right: 9px solid transparent;
-	border-top: 10px solid #17181B;
-}
 .desc:after{
 	content: '\f10d';
 	position: absolute;
+	left: 10px;
+	color: #00A3E1;
 	font-size: 50px;
 	font-family: "Font Awesome 5 Free";
-	    font-weight: 600;
+	font-weight: 600;
 }
 .desc p{
 	display: inline-block;
 	position: relative;
 	width: auto;
 	height: auto;
-	padding: 10px 0 10px 24px;
+	padding: 10px 10px 10px 70px;
 }

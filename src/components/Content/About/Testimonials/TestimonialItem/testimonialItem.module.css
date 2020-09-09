@@ -2,6 +2,21 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	width: 288px;
+	width: 90vw;
+	max-width: 583.19px;
 	height: auto;
+	margin-right: 30px;
+}
+@media (min-width: 900px){
+	.item{
+		width: 34vw;		
+	}
+	.item:last-child{
+		margin-right: 0;		
+	}
+}
+@media (min-width: 1200px){
+	.item{
+		width: 50%;		
+	}
 }

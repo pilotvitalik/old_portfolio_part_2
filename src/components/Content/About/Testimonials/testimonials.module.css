@@ -27,3 +27,8 @@
 	width: auto;
 	height: auto;
 }
+@media (min-width: 1200px){
+	.slider{
+		width: 1040px;
+	}
+}
