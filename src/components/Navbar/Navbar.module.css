@@ -11,6 +11,6 @@
 	.leftNavbar{
 		display: flex;
 		width: 200px;
-		position: relative;
+		position: fixed;
 	}
 }
