@@ -10,6 +10,9 @@
 	background: url('../../../img/home.jpg') no-repeat;
 	background-size: cover;
 }
+.homeTitle{
+	height: 100vh;
+}
 .homeTitle>div{
 	display: flex;
 	flex-direction: row;

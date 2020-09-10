@@ -304,7 +304,81 @@ let store = {
         },
       ],
     }
-  ],  
+  ],
+  resumePage:[
+    {
+      resumeIcon: {
+        titlePage: 'Мое резюме',
+        url: resumeImg,
+        name: 'мое резюме',
+      },
+    },
+    {
+      description: [
+        {
+          title: 'Работа',
+          data: [
+            {
+              id: 'resumeWork_1',
+              startYear: 2018,
+              stopYear: 2021,
+              position: 'Frontend developer',
+              companyName: 'БЖР',
+              companyCity: 'Санкт-Петербург, Россия',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
+            },
+            {
+              id: 'resumeWork_2',
+              startYear: 2018,
+              stopYear: 2021,
+              position: 'Frontend developer',
+              companyName: 'БЖР',
+              companyCity: 'Санкт-Петербург, Россия',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
+            },
+            {
+              id: 'resumeWork_3',
+              startYear: 2018,
+              stopYear: 2021,
+              position: 'Frontend developer',
+              companyName: 'БЖР',
+              companyCity: 'Санкт-Петербург, Россия',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
+            },
+          ]
+        },
+        {
+          title: 'Образование',
+          data: [
+            {
+              id: 'resumeEdu_1',
+              startYear: 2018,
+              stopYear: 2021,
+              profession: 'Frontend developer',
+              courseName: 'БЖР',
+              courseCity: 'Санкт-Петербург, Россия',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
+            },
+            {
+              id: 'resumeEdu_2',
+              startYear: 2018,
+              stopYear: 2021,
+              profession: 'Frontend developer',
+              courseName: 'БЖР',
+              courseCity: 'Санкт-Петербург, Россия',
+              description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
+            },
+          ]
+        }
+      ],
+      skills: [
+        {
+          title: 'Нывыки',
+        },
+        ['HTML', 'CSS3', 'JS', 'React']
+      ]
+    }
+  ]
 }
 
 export { store };

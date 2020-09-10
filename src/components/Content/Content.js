@@ -15,6 +15,7 @@ class Content extends React.Component{
 		this.state = {
 			contactPage: this.props.content.contactPage,
 			aboutPage: this.props.content.aboutPage,
+			resumePage: this.props.content.resumePage,
 		}
 	}
 
@@ -40,7 +41,7 @@ class Content extends React.Component{
 		    		<About about={ this.state.aboutPage }/>
 		    	</Route>
 		    	<Route path='/resume'>
-		    		<Resume/>
+		    		<Resume resume={ this.state.resumePage }/>
 		    	</Route>
 		    	<Route path='/portfolio'>
 		    		<Portfolio/>
