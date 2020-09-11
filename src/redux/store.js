@@ -354,18 +354,18 @@ let store = {
               id: 'resumeEdu_1',
               startYear: 2018,
               stopYear: 2021,
-              profession: 'Frontend developer',
+              position: 'Frontend developer',
               courseName: 'БЖР',
-              courseCity: 'Санкт-Петербург, Россия',
+              companyCity: 'Санкт-Петербург, Россия',
               description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
             },
             {
               id: 'resumeEdu_2',
               startYear: 2018,
               stopYear: 2021,
-              profession: 'Frontend developer',
-              courseName: 'БЖР',
-              courseCity: 'Санкт-Петербург, Россия',
+              position: 'Frontend developer',
+              companyName: 'БЖР',
+              companyCity: 'Санкт-Петербург, Россия',
               description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget facilisis felis, eu lobortis sem. Donec efficitur, tellus eu eleifend dignissim, augue mauris faucibus ex, sed pharetra enim ex et nisi.'
             },
           ]
@@ -373,9 +373,26 @@ let store = {
       ],
       skills: [
         {
-          title: 'Нывыки',
+          title: 'Навыки',
         },
-        ['HTML', 'CSS3', 'JS', 'React']
+        [
+          {
+            id: 'skill_1',
+            name: 'HTML',
+          },
+          {
+            id: 'skill_2',
+            name: 'CSS3',
+          },
+          {
+            id: 'skill_3',
+            name: 'JS',
+          },
+          {
+            id: 'skill_4',
+            name: 'React',
+          },
+        ]
       ]
     }
   ]
