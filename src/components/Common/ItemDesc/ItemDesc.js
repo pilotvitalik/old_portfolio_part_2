@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './item.module.css';
 
 class ItemDesc extends React.Component{
 	constructor(props){
@@ -14,17 +15,16 @@ class ItemDesc extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.data)
 		return(
-			<div>
-				<div>
+			<div className={ style.item }>
+				<div className={ style.period }>
 					<p>{ this.state.stop }</p>
 					<span></span>
 					<p>{ this.state.start }</p>
 				</div>
-				<div>
+				<div className={ style.desc }>
 					<h4>{ this.state.pos }</h4>
-					<div>
+					<div className={ style.company }>
 						<p>{ this.state.company }</p>
 						<p>{ this.state.city }</p>
 					</div>

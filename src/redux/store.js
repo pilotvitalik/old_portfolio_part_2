@@ -38,6 +38,9 @@ import logo from '../img/logo/logo.jpg';
   import BJR from '../img/aboutPage/clients/BJR.jpg';
   import user_photo from '../img/aboutPage/testimonials/user_avatar.jpg'; 
 
+// icons for about page
+  import resume from '../img/resume/resume.svg';
+
 let store = {
   navMenuList: [
     [
@@ -309,7 +312,7 @@ let store = {
     {
       resumeIcon: {
         titlePage: 'Мое резюме',
-        url: resumeImg,
+        url: resume,
         name: 'мое резюме',
       },
     },

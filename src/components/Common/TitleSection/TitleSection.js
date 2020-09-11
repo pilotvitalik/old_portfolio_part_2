@@ -10,7 +10,6 @@ class TitleSection extends React.Component{
 	}
 
 	render(){
-		console.log(this.props);
 		return(
 			<div className={ style.title }>
 				<h3>{ this.state.title }</h3>

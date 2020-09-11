@@ -1,6 +1,7 @@
 import React from 'react';
 import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 import { ListSkills } from './ListSkills/ListSkills.js';
+import style from './Skills.module.css';
 
 class Skills extends React.Component{
 	constructor(props){
@@ -13,7 +14,7 @@ class Skills extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className={ style.skills }>
 				<TitleSection title={ this.state.title } />
 				<ListSkills list={ this.state.list }/>
 			</div>

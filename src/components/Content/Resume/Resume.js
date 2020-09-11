@@ -2,6 +2,7 @@ import React from 'react';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { Description } from './Description/Description.js';
 import { Skills } from './Skills/Skills.js';
+import style from './Resume.module.css';
 
 class Resume extends React.Component{
 	constructor(props){
@@ -15,7 +16,7 @@ class Resume extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className={ style.resume }>
 				<HeaderPage icon={ this.state.title }/>
 				<Description descript={ this.state.descript }/>
 				<Skills skill={ this.state.skills }/>

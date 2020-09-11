@@ -1,6 +1,7 @@
 import React from 'react';
 import { TitleSection } from '../../../../Common/TitleSection/TitleSection.js';
 import { ItemDesc } from '../../../../Common/ItemDesc/ItemDesc.js';
+import style from './LeftDescript.module.css';
 
 class LeftDescript extends React.Component{
 	constructor(props){
@@ -17,7 +18,7 @@ class LeftDescript extends React.Component{
 			<ItemDesc key={ item.id } data={ item }/>
 		);
 		return(
-			<div>
+			<div className={ style.leftDescript }>
 				<TitleSection title={ this.state.title }/>
 				{ items }
 			</div>

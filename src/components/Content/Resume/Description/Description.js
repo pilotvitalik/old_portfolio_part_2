@@ -1,6 +1,7 @@
 import React from 'react';
 import { LeftDescript } from './LeftDescript/LeftDescript.js';
 import { RightDescript } from './RightDescript/RightDescript.js';
+import style from './Description.module.css'
 
 class Description extends React.Component{
 	constructor(props){
@@ -13,7 +14,7 @@ class Description extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className={ style.description }>
 				<LeftDescript desc={ this.state.leftDesc }/>
 				<RightDescript desc={ this.state.rightDesc }/>
 			</div>

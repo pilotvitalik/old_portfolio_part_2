@@ -10,7 +10,6 @@ class ListSkills extends React.Component{
 	}
 
 	render(){
-		console.log(this.state.skills)
 		const list = this.state.skills;
 		const items = list.map((item) => 
 			<ItemSkill key={ item.id } data={ item }/>

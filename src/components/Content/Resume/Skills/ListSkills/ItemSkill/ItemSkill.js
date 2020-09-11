@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './item.module.css';
 
 class ItemSkill extends React.Component{
 	constructor(props){
@@ -10,7 +11,7 @@ class ItemSkill extends React.Component{
 
 	render(){
 		return(
-			<li>
+			<li className={ style.item }>
 				<span></span>
 				{ this.state.skill.name }
 			</li>
