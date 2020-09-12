@@ -43,17 +43,17 @@
 	top: unset;
 	bottom: -16px
 }
-.period p:first-child:before,
-.period p:last-child:before{
+.period:before,
+.period:after{
 	content: '';
 	position: absolute;
 	width: 2px;
 	height: 8px;
 	top: 11px;
-	right: -10px;
+	right: -1px;
 	background: #00A3E1;
 }
-.period p:last-child:before{
+.period:before{
 	top: unset;
 	bottom: 11px;
 }

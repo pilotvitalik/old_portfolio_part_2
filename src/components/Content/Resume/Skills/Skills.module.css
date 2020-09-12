@@ -15,3 +15,8 @@
 	height: auto;
 	background: transparent;
 }
+@media (min-width: 992px){
+	.skills ul{
+		justify-content: space-around;
+	}
+}

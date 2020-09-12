@@ -6,3 +6,9 @@
 	width: 90%;
 	height: auto;
 }
+
+@media (min-width: 992px){
+	.rightDescript{
+		width: 45%;
+	}
+}
