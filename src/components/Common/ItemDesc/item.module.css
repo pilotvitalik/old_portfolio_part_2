@@ -24,6 +24,7 @@
 	position: relative;
 	width: 2px;
 	height: 100%;
+	right: -1px;
 	background: #00A3E1;
 }
 .period span:before,
@@ -41,6 +42,20 @@
 .period span:after{
 	top: unset;
 	bottom: -16px
+}
+.period p:first-child:before,
+.period p:last-child:before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 8px;
+	top: 11px;
+	right: -10px;
+	background: #00A3E1;
+}
+.period p:last-child:before{
+	top: unset;
+	bottom: 11px;
 }
 .desc{
 	display: flex;
@@ -62,7 +77,7 @@
 	margin: 0;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 19px;
 	text-transform: uppercase;
 	line-height: 22px;
 }
