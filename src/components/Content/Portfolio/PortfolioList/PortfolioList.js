@@ -1,5 +1,6 @@
 import React from 'react';
 import { ItemPortfolio } from './ItemPortfolio/ItemPortfolio.js';
+import style from './PortfolioList.module.css';
 
 class PortfolioList extends React.Component{
 	constructor(props){
@@ -15,7 +16,7 @@ class PortfolioList extends React.Component{
 			<ItemPortfolio key={ item.id } data={ item }/>
 		);
 		return(
-			<ul>
+			<ul className={ style.portfolioList }>
 				{ items }
 			</ul>
 		);

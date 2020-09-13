@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './ItemPortfolio.module.css';
 
 class ItemPortfolio extends React.Component{
 	constructor(props){
@@ -20,7 +21,7 @@ class ItemPortfolio extends React.Component{
 				</li>
 		);
 		return(
-			<li data-url={ this.state.url }>
+			<li className={ style.itemPortfolio } data-url={ this.state.url }>
 				<div>
 					<p>{ this.state.title }</p>
 					<ul>

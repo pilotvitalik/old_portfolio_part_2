@@ -1,5 +1,6 @@
 import React from 'react';
 import { ItemCat } from './ItemCat/ItemCat.js';
+import style from './CatNavMenu.module.css';
 
 class CatNavMenu extends React.Component{
 	constructor(props){
@@ -15,7 +16,7 @@ class CatNavMenu extends React.Component{
 			<ItemCat key={category.id} data={category}/>
 		);
 		return(
-			<ul>
+			<ul className={ style.catNavbar }>
 				{ items }
 			</ul>
 		);

@@ -1,0 +1,36 @@
+.catNavbar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	width: 90%;
+	max-width: 376px;
+	height: auto;
+	margin: 15px 0;
+	background: transparent;
+}
+.catNavbar li{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	border: none;
+}
+.catNavbar li:first-child{
+	background: #00A3E1;
+	color: #6B6C6D;
+}
+@media (min-width: 768px){
+	.catNavbar{
+		border: 1px dashed rgba(255, 255, 255, 0.2);
+		border-radius: 20px;
+	}
+}

@@ -1,0 +1,69 @@
+.itemPortfolio{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 300px;
+	height: 250px;
+	margin-bottom: 10px 0 25px 0;
+	border: none;
+	border-radius: 10px;
+}
+.itemPortfolio>div{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	z-index: 1;
+}
+.itemPortfolio>div:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #00A3E1;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+.itemPortfolio>div p{
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+}
+.itemPortfolio>div ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin-top: 15px;
+	background: transparent;
+}
+.itemPortfolio>div ul li{
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: auto;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+}
+.itemPortfolio>div ul li:not(:last-child){
+	margin-right: 7px;
+}
+.itemPortfolio>img{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border-radius: 10px;
+	border: none;
+}
