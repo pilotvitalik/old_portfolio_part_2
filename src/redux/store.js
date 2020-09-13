@@ -38,8 +38,12 @@ import logo from '../img/logo/logo.jpg';
   import BJR from '../img/aboutPage/clients/BJR.jpg';
   import user_photo from '../img/aboutPage/testimonials/user_avatar.jpg'; 
 
-// icons for about page
+// icons for resume page
   import resume from '../img/resume/resume.svg';
+
+// icons for portfolio page
+  import portfolio from '../img/portfolio/portfolio.svg';
+  import mySite from '../img/portfolio/list_portfolio/portfolioSite.jpg';
 
 let store = {
   navMenuList: [
@@ -398,6 +402,47 @@ let store = {
         ]
       ]
     }
+  ],
+  portfolioPage: [
+    {
+      portfolioIcon: {
+        titlePage: 'Портфолио',
+        url: portfolio,
+        name: 'Портфолио',
+      },
+    },
+    {
+      categories: [
+        {
+          id: 'catPortfolio_1',
+          name: 'Все',
+        },
+        {
+          id: 'catPortfolio_2',
+          name: 'ReactJs + Redux',
+        }
+        ,
+      ]
+    },
+    [
+      {
+        id: 'portfolio_1',
+        title: 'Мой сайт',
+        urlImage: mySite,
+        url: '',
+        titleImg: 'Мой сайт',
+        technologies: [
+          {
+            id: 'tech_1',
+            name: 'ReactJs',
+          },
+          {
+            id: 'tech_2',
+            name: 'Redux',
+          },
+        ]
+      }
+    ]
   ]
 }
 

@@ -1,9 +1,25 @@
 import React from 'react';
+import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
+import { CatNavMenu } from './CatNavMenu/CatNavMenu.js';
+import { PortfolioList } from './PortfolioList/PortfolioList.js';
 
 class Portfolio extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			titlePage: this.props.portfolio[0].portfolioIcon,
+			category: this.props.portfolio[1],
+			listPortfolio: this.props.portfolio[2],
+		};
+	}
+
 	render(){
 		return(
-			<h3>This is page Portfolio</h3>
+			<div>
+				<HeaderPage icon={ this.state.titlePage }/>
+				<CatNavMenu cat={ this.state.category }/>
+				<PortfolioList list={ this.state.listPortfolio }/>
+			</div>
 		);
 	}
 }

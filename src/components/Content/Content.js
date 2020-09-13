@@ -16,6 +16,7 @@ class Content extends React.Component{
 			contactPage: this.props.content.contactPage,
 			aboutPage: this.props.content.aboutPage,
 			resumePage: this.props.content.resumePage,
+			portfolioPage: this.props.content.portfolioPage,
 		}
 	}
 
@@ -44,7 +45,7 @@ class Content extends React.Component{
 		    		<Resume resume={ this.state.resumePage }/>
 		    	</Route>
 		    	<Route path='/portfolio'>
-		    		<Portfolio/>
+		    		<Portfolio portfolio={ this.state.portfolioPage }/>
 		    	</Route>
 		    	<Route path='/blog'>
 		    		<Blog/>
