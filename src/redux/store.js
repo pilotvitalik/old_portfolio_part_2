@@ -429,8 +429,7 @@ let store = {
         id: 'portfolio_1',
         title: 'Мой сайт',
         urlImage: mySite,
-        url: '',
-        titleImg: 'Мой сайт',
+        url: '#',
         technologies: [
           {
             id: 'tech_1',
