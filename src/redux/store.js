@@ -45,6 +45,9 @@ import logo from '../img/logo/logo.jpg';
   import portfolio from '../img/portfolio/portfolio.svg';
   import mySite from '../img/portfolio/list_portfolio/portfolioSite.jpg';
 
+// icons for blog page
+  import blog from '../img/blog/blog.svg';
+
 let store = {
   navMenuList: [
     [
@@ -440,6 +443,26 @@ let store = {
             name: 'Redux',
           },
         ]
+      }
+    ]
+  ],
+  blogPage:[
+    {
+      blogIcon: {
+        titlePage: 'Блог',
+        url: blog,
+        name: 'Блог',
+      },
+    },
+    [
+      {
+        id: 'blog_1',
+        titleBlog: 'Первая запись',
+        date: '14 сентября 2020',
+        themeBlog: 'Разное',
+        blogPhoto: '',
+        namePhoto: '',
+        link: '#'
       }
     ]
   ]
