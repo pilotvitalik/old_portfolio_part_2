@@ -1,0 +1,10 @@
+.blogPage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	max-height: auto;
+	background: #6B6C6D;
+}

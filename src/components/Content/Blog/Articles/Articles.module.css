@@ -1,0 +1,10 @@
+.blogList{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 90%;
+	max-width: 300px;
+	height: auto;
+	margin-top: 20px;
+	background: transparent;
+}

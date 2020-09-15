@@ -47,6 +47,7 @@ import logo from '../img/logo/logo.jpg';
 
 // icons for blog page
   import blog from '../img/blog/blog.svg';
+  import blog_140920 from '../img/blog/blogs/140920.jpg';
 
 let store = {
   navMenuList: [
@@ -460,8 +461,8 @@ let store = {
         titleBlog: 'Первая запись',
         date: '14 сентября 2020',
         themeBlog: 'Разное',
-        blogPhoto: '',
-        namePhoto: '',
+        blogPhoto: blog_140920,
+        namePhoto: '14 сентября 2020',
         link: '#'
       }
     ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './ItemArticle.module.css';
 
 class ItemArticle extends React.Component{
 	constructor(props){
@@ -14,8 +15,10 @@ class ItemArticle extends React.Component{
 
 	render(){
 		return(
-			<li>
-				<img src={ this.state.image } alt={ this.state.imageName }/>
+			<li className={ style.item }>
+				<div>
+				{/* <img src={ this.state.image } alt={ this.state.imageName }/> */}
+				</div>
 				<div>
 					<p>{ this.state.theme }</p>
 					<p>{ this.state.title }</p>
