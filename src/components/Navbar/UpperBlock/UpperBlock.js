@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavMenu } from './NavMenu/NavMenu.js';
 import { Logo } from './Logo/Logo.js';
 import style from './upperBlock.module.css';
 
-class UpperBlock extends React.Component{
+class UpperBlock extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

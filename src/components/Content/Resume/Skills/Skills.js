@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 import { ListSkills } from './ListSkills/ListSkills.js';
 import style from './Skills.module.css';
 
-class Skills extends React.Component{
+class Skills extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

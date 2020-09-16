@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import style from './Content.module.css';
 
@@ -9,7 +9,7 @@ import { Portfolio } from './Portfolio/Portfolio.js';
 import { Blog } from './Blog/Blog.js';
 import { Contact } from './Contact/Contact.js';
 
-class Content extends React.Component{
+class Content extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

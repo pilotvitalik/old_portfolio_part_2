@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './OtherContacts.module.css';
 import { Item } from './Item/Item.js';
 
-class OtherContacts extends React.Component{
+class OtherContacts extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

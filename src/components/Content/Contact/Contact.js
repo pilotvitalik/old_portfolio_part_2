@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './contact.module.css';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { SendForm } from './SendForm/SendForm.js';
 import { OtherContacts } from './OtherContacts/OtherContacts.js';
 
-class Contact extends React.Component{
+class Contact extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

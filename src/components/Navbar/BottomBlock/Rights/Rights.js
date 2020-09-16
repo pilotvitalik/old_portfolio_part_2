@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './rights.module.css'
 
-class Rights extends React.Component{
+class Rights extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ItemCat } from './ItemCat/ItemCat.js';
 import style from './CatNavMenu.module.css';
 
-class CatNavMenu extends React.Component{
+class CatNavMenu extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

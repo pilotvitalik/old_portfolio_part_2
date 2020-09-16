@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ItemSkill } from './ItemSkill/ItemSkill.js';
 
-class ListSkills extends React.Component{
+class ListSkills extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

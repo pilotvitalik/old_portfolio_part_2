@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class ItemCat extends React.Component{
+class ItemCat extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

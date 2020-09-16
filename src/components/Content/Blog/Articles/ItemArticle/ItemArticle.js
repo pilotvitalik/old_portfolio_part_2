@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './ItemArticle.module.css';
 
-class ItemArticle extends React.Component{
+class ItemArticle extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

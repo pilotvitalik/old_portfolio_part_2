@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './personalInfo.module.css';
 import { InfoItem } from './InfoItem/InfoItem.js';
 import { Button } from '../../../../Common/Button/Button.js';
 
-class PersonalInfo extends React.Component{
+class PersonalInfo extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

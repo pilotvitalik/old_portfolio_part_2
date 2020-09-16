@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './about.module.css';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { Description } from './Description/Description.js';
@@ -7,7 +7,7 @@ import { Clients } from './Clients/Clients.js';
 import { Testimonials } from './Testimonials/Testimonials.js';
 
 
-class About extends React.Component{
+class About extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

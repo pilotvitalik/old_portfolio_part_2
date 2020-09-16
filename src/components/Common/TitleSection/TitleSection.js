@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './titleSection.module.css';
 
-class TitleSection extends React.Component{
+class TitleSection extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

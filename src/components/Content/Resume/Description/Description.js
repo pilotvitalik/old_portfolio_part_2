@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { LeftDescript } from './LeftDescript/LeftDescript.js';
 import { RightDescript } from './RightDescript/RightDescript.js';
 import style from './Description.module.css'
 
-class Description extends React.Component{
+class Description extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

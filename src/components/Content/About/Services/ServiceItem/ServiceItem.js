@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './serviceItem.module.css';
 
-class ServiceItem extends React.Component{
+class ServiceItem extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './ItemSkill.module.css';
 
-class ItemSkill extends React.Component{
+class ItemSkill extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

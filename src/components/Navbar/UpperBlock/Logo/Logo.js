@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './logo.module.css';
 
-class Logo extends React.Component{
+class Logo extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

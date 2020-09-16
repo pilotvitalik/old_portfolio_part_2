@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './testimonialItem.module.css';
 import { Description } from './Description/Description.js';
 import { User } from './User/User.js';
 
-class TestimonialItem extends React.Component{
+class TestimonialItem extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

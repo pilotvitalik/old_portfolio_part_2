@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Item } from './Item/Item.js';
 import './NavMenu.module.css';
 
-class NavMenu extends React.Component{
+class NavMenu extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './clients.module.css';
 import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 import { ClientItem } from './ClientItem/ClientItem.js';
 
-class Clients extends React.Component{
+class Clients extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

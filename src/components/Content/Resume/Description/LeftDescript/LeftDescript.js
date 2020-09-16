@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { TitleSection } from '../../../../Common/TitleSection/TitleSection.js';
 import { ItemDesc } from '../../../../Common/ItemDesc/ItemDesc.js';
 import style from './LeftDescript.module.css';
 
-class LeftDescript extends React.Component{
+class LeftDescript extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

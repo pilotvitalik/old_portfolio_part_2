@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { CatNavMenu } from './CatNavMenu/CatNavMenu.js';
 import { PortfolioList } from './PortfolioList/PortfolioList.js';
 import style from './Portfolio.module.css';
 
-class Portfolio extends React.Component{
+class Portfolio extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

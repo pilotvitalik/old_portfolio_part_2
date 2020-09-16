@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './headerPage.module.css';
 
-class HeaderPage extends React.Component{
+class HeaderPage extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

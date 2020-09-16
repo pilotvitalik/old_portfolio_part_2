@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './services.module.css';
 import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 import { ServiceItem } from './ServiceItem/ServiceItem.js';
 
-class Services extends React.Component{
+class Services extends Component{
 	constructor(props){
 		super(props);
 		this.state ={

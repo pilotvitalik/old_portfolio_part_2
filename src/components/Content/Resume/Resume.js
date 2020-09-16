@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { Description } from './Description/Description.js';
 import { Skills } from './Skills/Skills.js';
 import style from './Resume.module.css';
 
-class Resume extends React.Component{
+class Resume extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

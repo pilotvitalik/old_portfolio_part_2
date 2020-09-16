@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './Navbar.module.css';
 import { BottomBlock } from './BottomBlock/BottomBlock.js';
 import { UpperBlock } from './UpperBlock/UpperBlock.js';
 
-class Navbar extends React.Component{
+class Navbar extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { SocialNetwork } from './SocialNetwork/SocialNetwork.js';
 import { Rights } from './Rights/Rights.js';
 import style from './bottomBlock.module.css';
 
-class BottomBlock extends React.Component{
+class BottomBlock extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

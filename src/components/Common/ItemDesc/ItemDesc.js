@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './item.module.css';
 
-class ItemDesc extends React.Component{
+class ItemDesc extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './sendForm.module.css';
 import { Button } from '../../../Common/Button/Button.js';
 import { TitleSection } from '../../../Common/TitleSection/TitleSection.js';
 
-class SendForm extends React.Component{
+class SendForm extends Component{
 	constructor(props){
 		super(props);
 		this.state = {

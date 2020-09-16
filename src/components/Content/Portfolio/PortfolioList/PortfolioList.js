@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ItemPortfolio } from './ItemPortfolio/ItemPortfolio.js';
 import style from './PortfolioList.module.css';
 
-class PortfolioList extends React.Component{
+class PortfolioList extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
