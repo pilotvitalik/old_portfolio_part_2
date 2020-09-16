@@ -1,10 +1,20 @@
 .blogList{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	position: relative;
 	width: 90%;
-	max-width: 300px;
 	height: auto;
 	margin-top: 20px;
 	background: transparent;
+}
+@media (min-width: 992px){
+	.blogList{
+		width: 95%;
+	}
+}
+@media (min-width: 1200px){
+	.blogList{
+		width: 1040px;
+	}
 }

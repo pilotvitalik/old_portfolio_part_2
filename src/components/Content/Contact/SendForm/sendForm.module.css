@@ -23,7 +23,8 @@ form>div{
 	width: 100%;
 	height: auto;
 }
-form>div:first-child{
+form>div:first-child,
+form>div:first-child>div:first-child{
 	margin-bottom: 50px;
 }
 .upperInput{
@@ -59,9 +60,9 @@ form>div:first-child{
 .message textarea{
 	display: inline-block;
 	position: relative;
-	width: 100%;
+	width: 95%;
 	height: auto;
-	padding-left: 10px;
+	padding-left: 3%;
 	padding-top: 13px;
 	color: #e1e1e1;
 	border: 2px solid #e1e1e1;
@@ -91,5 +92,8 @@ form>div:first-child{
 	}
 	.upperInput{
 		width: 45%;
+	}
+	form>div:first-child>div:first-child{
+		margin-bottom: 0;
 	}
 }

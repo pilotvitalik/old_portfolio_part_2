@@ -68,7 +68,7 @@
 		margin-left: 200px;
 	}
 	.wrapper>div{
-		height: 100%;
+		height: 100vh;
 	}
 }
 @media (min-width: 992px){
