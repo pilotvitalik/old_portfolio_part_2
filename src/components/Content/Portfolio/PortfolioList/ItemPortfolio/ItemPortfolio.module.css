@@ -32,7 +32,6 @@
 	display: inline-block;
 	color: #fff;
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 }
 .itemPortfolio>div ul{
@@ -52,7 +51,6 @@
 	width: auto;
 	height: auto;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
 	border: none;
 }
 .itemPortfolio>div ul li:not(:last-child){

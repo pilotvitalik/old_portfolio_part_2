@@ -19,8 +19,6 @@
 	width: auto;
 	height: auto;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
 }
 @media (min-width: 768px){
 	.itemContact{
