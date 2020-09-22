@@ -3,7 +3,7 @@ import style from './contact.module.css';
 import { HeaderPage } from '../../Common/HeaderPage/HeaderPage.js';
 import { SendForm } from './SendForm/SendForm.js';
 import { OtherContacts } from './OtherContacts/OtherContacts.js';
-import { MyFancyComponent } from './Maps/Maps.js';
+import { Maps } from './Maps/Maps.js';
 
 class Contact extends Component{
 	constructor(props){
@@ -22,7 +22,7 @@ class Contact extends Component{
 				<HeaderPage icon={ this.state.mailIcon }/>
 				<SendForm btn={ this.state.button } title={ this.state.titleSection }/>
 				<OtherContacts contact={ this.state.otherContacts }/>
-				<MyFancyComponent/>
+				<Maps/>
 			</div>
 		);
 	}
