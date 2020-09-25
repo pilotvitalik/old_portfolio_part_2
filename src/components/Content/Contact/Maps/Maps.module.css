@@ -1,5 +1,8 @@
-#map {
-   width: 100%;
-   height: 400px;
-   background-color: grey;
+.maps {
+	display: block;
+	position: relative;
+   	width: 100%;
+   	height: 500px;
+   	margin-top: 19px;
+   	background-color: #17181B;
  }
