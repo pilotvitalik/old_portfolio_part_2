@@ -10,6 +10,14 @@ class SendForm extends Component{
 			button: this.props.btn,
 			titleSection: this.props.title,
 		};
+		this.moveTitle = this.moveTitle.bind(this);
+	}
+
+	moveTitle(e){
+		const id = e.currentTarget.id + '_label';
+		this.setState({
+			[id]: true,
+		})
 	}
 
 	render(){
@@ -19,12 +27,12 @@ class SendForm extends Component{
 				<form>
 					<div>
 						<div className={ style.upperInput }>
-							<input id='feedbackName' type='text'/>
-							<label htmlFor='feedbackName'>Введите имя</label>
+							<input id='feedbackName' type='text' onClick={ this.moveTitle }/>
+							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
 						</div>
 						<div className={ style.upperInput }>
-							<input id='feedbackMail' type='text'/>
-							<label htmlFor='feedbackMail'>Email</label>
+							<input id='feedbackMail' type='text' onClick={ this.moveTitle }/>
+							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
 						</div>
 					</div>
 					<div className={ style.message }>

@@ -17,10 +17,6 @@ const position = {
   lng: 30.316329
 }
 
-const onLoad = marker => {
-  console.log('marker: ', marker)
-}
-
 class Maps extends Component {
   render() {
     return (
@@ -34,7 +30,6 @@ class Maps extends Component {
             zoom={14}
           >
             <Marker
-              onLoad={onLoad}
               position={position}
             />
           </GoogleMap>
