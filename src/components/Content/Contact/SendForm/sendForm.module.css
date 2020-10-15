@@ -61,6 +61,10 @@ form>div:first-child>div:first-child{
 	line-height: 40px;
 	top: 0;
 }
+.upperInput input + label:hover,
+.message textarea + label:hover{
+	cursor: text;
+}
 .upLabel{
 	top: -36px !important;
 }

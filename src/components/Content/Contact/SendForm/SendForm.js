@@ -9,16 +9,42 @@ class SendForm extends Component{
 		this.state = {
 			button: this.props.btn,
 			titleSection: this.props.title,
+			activeEl: '',
+			oldActiveEl: '',
 		};
+		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
 	}
 
 	moveTitle(e){
+		console.log('=== moveTitle ===');
 		const id = e.currentTarget.id + '_label';
 		this.setState({
 			[id]: true,
+			oldActiveEl: this.state.activeEl,
+			activeEl: e.currentTarget.id,
+		}, () => {
+			document.addEventListener('click', this.moveDownTitle);
 		})
 	}
+
+	moveDownTitle(e){
+		console.log('=== moveDownTitle ===');
+		console.log(this.state);
+		let labelId;
+		if (this.state.oldActiveEl === ''){
+			labelId = this.state.activeEl + '_label';
+		} else {
+			labelId = this.state.oldActiveEl + '_label';
+		}
+		this.setState({
+			[labelId]: false,
+			activeEl: '',
+			oldActiveEl: ''
+		})
+		document.removeEventListener('click', this.moveDownTitle);
+	}
+
 
 	render(){
 		return(
