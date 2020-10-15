@@ -10,7 +10,6 @@ class SendForm extends Component{
 			button: this.props.btn,
 			titleSection: this.props.title,
 			activeEl: '',
-			oldActiveEl: '',
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
@@ -18,30 +17,33 @@ class SendForm extends Component{
 
 	moveTitle(e){
 		console.log('=== moveTitle ===');
+		console.log(e.currentTarget)
 		const id = e.currentTarget.id + '_label';
-		this.setState({
-			[id]: true,
-			oldActiveEl: this.state.activeEl,
-			activeEl: e.currentTarget.id,
-		}, () => {
-			document.addEventListener('click', this.moveDownTitle);
-		})
+		if (this.state.activeEl === ''){
+			this.setState({
+				[id]: true,
+				activeEl: id,
+			}, () => {
+				document.addEventListener('click', this.moveDownTitle);
+			})
+		}
+		
 	}
 
 	moveDownTitle(e){
 		console.log('=== moveDownTitle ===');
 		console.log(this.state);
-		let labelId;
-		if (this.state.oldActiveEl === ''){
-			labelId = this.state.activeEl + '_label';
-		} else {
-			labelId = this.state.oldActiveEl + '_label';
-		}
+		console.log(e.currentTarget);
+		console.log(e.target);
+		console.log(this);
+		let oldActiveEl = this.state.activeEl;
+		console.log(oldActiveEl)
+		console.log(this.state[oldActiveEl])
 		this.setState({
-			[labelId]: false,
+			[oldActiveEl]: false,
 			activeEl: '',
-			oldActiveEl: ''
-		})
+		});
+		console.log(this.state);
 		document.removeEventListener('click', this.moveDownTitle);
 	}
 
@@ -62,8 +64,8 @@ class SendForm extends Component{
 						</div>
 					</div>
 					<div className={ style.message }>
-						<textarea id='feedbackMes' rows='9'></textarea>
-						<label htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
+						<textarea id='feedbackMes' rows='9' onClick={ this.moveTitle }></textarea>
+						<label className={ this.state.feedbackMes_label ? style.upTextarea : '' } htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
 					<Button btn={ this.state.button }/>
 				</form>
