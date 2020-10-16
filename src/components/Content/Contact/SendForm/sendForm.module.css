@@ -63,7 +63,7 @@ form>div:first-child>div:first-child{
 }
 .upperInput input + label:hover,
 .message textarea + label:hover{
-	cursor: text;
+	cursor: pointer;
 }
 .upLabel{
 	top: -36px !important;
