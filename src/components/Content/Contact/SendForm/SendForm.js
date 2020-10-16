@@ -19,6 +19,7 @@ class SendForm extends Component{
 		console.log('=== moveTitle ===');
 		console.log(e.currentTarget)
 		const id = e.currentTarget.id + '_label';
+		let oldActiveEl;
 		if (this.state.activeEl === ''){
 			this.setState({
 				[id]: true,
@@ -26,19 +27,22 @@ class SendForm extends Component{
 			}, () => {
 				document.addEventListener('click', this.moveDownTitle);
 			})
+			return false;
 		}
-		
+		document.removeEventListener('click', this.moveDownTitle);
+		oldActiveEl = this.state.activeEl;
+		this.setState({
+			[oldActiveEl]: false,
+			[id]: true,
+			activeEl: id,
+		}, () => {
+			document.addEventListener('click', this.moveDownTitle);
+		})		
 	}
 
 	moveDownTitle(e){
 		console.log('=== moveDownTitle ===');
-		console.log(this.state);
-		console.log(e.currentTarget);
-		console.log(e.target);
-		console.log(this);
 		let oldActiveEl = this.state.activeEl;
-		console.log(oldActiveEl)
-		console.log(this.state[oldActiveEl])
 		this.setState({
 			[oldActiveEl]: false,
 			activeEl: '',
