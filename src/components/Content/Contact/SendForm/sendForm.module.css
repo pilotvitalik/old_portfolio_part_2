@@ -34,7 +34,7 @@ form>div:first-child>div:first-child{
 	width: auto;
 	height: auto;
 }
-.upperInput input{
+.formInp{
 	display: inline-block;
 	position: relative;
 	width: 100%;
@@ -45,7 +45,7 @@ form>div:first-child>div:first-child{
 	background: #6B6C6D;
 	outline: none;
 }
-.upperInput input + label,
+.formInp + label,
 .message textarea + label{
 	display: inline-block;
 	position: absolute;
@@ -56,12 +56,12 @@ form>div:first-child>div:first-child{
 	color: #e1e1e1;
 	transition: all 1s ease;
 }
-.upperInput input + label{
+.formInp + label{
 	height: 40px;
 	line-height: 40px;
 	top: 0;
 }
-.upperInput input + label:hover,
+.formInp + label:hover,
 .message textarea + label:hover{
 	cursor: pointer;
 }
@@ -110,4 +110,7 @@ form>div:first-child>div:first-child{
 	form>div:first-child>div:first-child{
 		margin-bottom: 0;
 	}
+}
+.whiteBorder{
+	border-color: #fff ;
 }

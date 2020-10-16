@@ -49,10 +49,12 @@ class SendForm extends Component{
 	moveTitle(e){
 		console.log('moveTitle');
 		const id = e.currentTarget.id + '_label';
+		const inp = e.currentTarget.id + '_inp';
 		let oldActiveEl;
 		if (this.state.activeEl === ''){
 			this.setState({
 				[id]: true,
+				[inp]: true,
 				activeEl: id,
 			}, () => {
 				document.addEventListener('click', this.moveDownTitle);
@@ -64,6 +66,7 @@ class SendForm extends Component{
 		this.setState({
 			[oldActiveEl]: false,
 			[id]: true,
+			[inp]: true,
 			activeEl: id,
 		}, () => {
 			document.addEventListener('click', this.moveDownTitle);
@@ -73,9 +76,11 @@ class SendForm extends Component{
 	moveDownTitle(e){
 		console.log('moveDownTitle');
 		let oldActiveEl = this.state.activeEl;
+		const inp = e.currentTarget.id + '_inp';
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
 			this.setState({
 				[oldActiveEl]: false,
+				[inp]: false,
 				activeEl: '',
 			});
 		}
@@ -90,16 +95,16 @@ class SendForm extends Component{
 				<form>
 					<div>
 						<div className={ style.upperInput }>
-							<input id='feedbackName' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal }/>
+							<input id='feedbackName' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ ${style.formInp} ${this.state.feedbackName_inp ? style.whiteBorder : ''} }/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
 						</div>
 						<div className={ style.upperInput }>
-							<input id='feedbackMail' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal }/>
+							<input id='feedbackMail' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ ${style.formInp} ${this.state.feedbackMail_inp ? style.whiteBorder : ''} }/>
 							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
 						</div>
 					</div>
 					<div className={ style.message }>
-						<textarea id='feedbackMes' rows='9' onClick={ this.moveTitle } onKeyDown={ this.showVal }></textarea>
+						<textarea id='feedbackMes' rows='9' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ this.state.feedbackMes_inp ? style.whiteBorder : '' }></textarea>
 						<label className={ this.state.feedbackMes_label ? style.upTextarea : '' } htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
 					<Button btn={ this.state.button }/>
