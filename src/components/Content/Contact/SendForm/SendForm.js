@@ -51,6 +51,7 @@ class SendForm extends Component{
 		const id = e.currentTarget.id + '_label';
 		const inp = e.currentTarget.id + '_inp';
 		let oldActiveEl;
+		let oldInp;
 		if (this.state.activeEl === ''){
 			this.setState({
 				[id]: true,
@@ -61,16 +62,20 @@ class SendForm extends Component{
 			})
 			return false;
 		}
+		console.log(this.state)
 		document.removeEventListener('click', this.moveDownTitle);
 		oldActiveEl = this.state.activeEl;
+		oldInp = oldActiveEl.replace(/_label/g, '_inp');
 		this.setState({
 			[oldActiveEl]: false,
+			[oldInp]: false,
 			[id]: true,
 			[inp]: true,
 			activeEl: id,
 		}, () => {
 			document.addEventListener('click', this.moveDownTitle);
-		})		
+		})	
+		console.log(this.state)	
 	}
 
 	moveDownTitle(e){
@@ -84,22 +89,29 @@ class SendForm extends Component{
 				activeEl: '',
 			});
 		}
+		console.log(this.state);
 		document.removeEventListener('click', this.moveDownTitle);
 	}
 
 
 	render(){
+		let inpName = style.formInp;
+		inpName += ' ';
+		inpName += this.state.feedbackName_inp ? style.whiteBorder : '';
+		let inpMail = style.formInp;
+		inpMail += ' ';
+		inpMail += this.state.feedbackMail_inp ? style.whiteBorder : '';
 		return(
 			<div className={ style.sendForm }>
 				<TitleSection title={ this.state.titleSection }/>
 				<form>
 					<div>
 						<div className={ style.upperInput }>
-							<input id='feedbackName' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ ${style.formInp} ${this.state.feedbackName_inp ? style.whiteBorder : ''} }/>
+							<input id='feedbackName' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ inpName }/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
 						</div>
 						<div className={ style.upperInput }>
-							<input id='feedbackMail' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ ${style.formInp} ${this.state.feedbackMail_inp ? style.whiteBorder : ''} }/>
+							<input id='feedbackMail' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ inpMail }/>
 							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
 						</div>
 					</div>

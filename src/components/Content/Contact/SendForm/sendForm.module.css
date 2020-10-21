@@ -56,6 +56,9 @@ form>div:first-child>div:first-child{
 	color: #e1e1e1;
 	transition: all 1s ease;
 }
+.message textarea + label{
+	top: 0;
+}
 .formInp + label{
 	height: 40px;
 	line-height: 40px;
@@ -69,7 +72,7 @@ form>div:first-child>div:first-child{
 	top: -36px !important;
 }
 .upTextarea{
-	top: -25px !important;
+	top: -36px !important;
 }
 .message textarea{
 	display: inline-block;
