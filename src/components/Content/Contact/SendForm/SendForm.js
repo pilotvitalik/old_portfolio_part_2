@@ -18,7 +18,6 @@ class SendForm extends Component{
 	}
 
 	showVal(e){
-		console.log('showVal');
 		e.preventDefault();
 		const curVal = e.currentTarget.value;
 		const id = e.currentTarget.id + '_label';
@@ -47,7 +46,6 @@ class SendForm extends Component{
 	}
 
 	moveTitle(e){
-		console.log('moveTitle');
 		const id = e.currentTarget.id + '_label';
 		const inp = e.currentTarget.id + '_inp';
 		let oldActiveEl;
@@ -62,7 +60,6 @@ class SendForm extends Component{
 			})
 			return false;
 		}
-		console.log(this.state)
 		document.removeEventListener('click', this.moveDownTitle);
 		oldActiveEl = this.state.activeEl;
 		oldInp = oldActiveEl.replace(/_label/g, '_inp');
@@ -75,11 +72,9 @@ class SendForm extends Component{
 		}, () => {
 			document.addEventListener('click', this.moveDownTitle);
 		})	
-		console.log(this.state)	
 	}
 
 	moveDownTitle(e){
-		console.log('moveDownTitle');
 		let oldActiveEl = this.state.activeEl;
 		const inp = e.currentTarget.id + '_inp';
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
@@ -89,7 +84,6 @@ class SendForm extends Component{
 				activeEl: '',
 			});
 		}
-		console.log(this.state);
 		document.removeEventListener('click', this.moveDownTitle);
 	}
 

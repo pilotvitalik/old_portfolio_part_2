@@ -56,9 +56,6 @@ form>div:first-child>div:first-child{
 	color: #e1e1e1;
 	transition: all 1s ease;
 }
-.message textarea + label{
-	top: 0;
-}
 .formInp + label{
 	height: 40px;
 	line-height: 40px;
@@ -72,14 +69,14 @@ form>div:first-child>div:first-child{
 	top: -36px !important;
 }
 .upTextarea{
-	top: -36px !important;
+	top: -25px !important;
 }
 .message textarea{
 	display: inline-block;
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-left: 3%;
+	padding-left: 10px;
 	padding-top: 13px;
 	color: #e1e1e1;
 	border: 2px solid #e1e1e1;
@@ -115,5 +112,5 @@ form>div:first-child>div:first-child{
 	}
 }
 .whiteBorder{
-	border-color: #fff ;
+	border-color: #fff !important;
 }
