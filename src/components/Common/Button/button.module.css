@@ -9,6 +9,7 @@ button{
 	text-transform: uppercase;
 	border: 2px solid #00A3E1;
 	background: transparent;
+	outline: none;
 }
 button:hover{
 	cursor: pointer;

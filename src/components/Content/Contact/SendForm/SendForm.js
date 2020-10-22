@@ -11,38 +11,38 @@ class SendForm extends Component{
 			titleSection: this.props.title,
 			activeEl: '',
 			prohibLabel: [],
+			feedbackName_val: '',
+			feedbackMail_val: '',
+			feedbackMes_val: '',
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
 		this.showVal = this.showVal.bind(this);
+		this.formSubmit = this.formSubmit.bind(this);
+	}
+
+	formSubmit(event){
+		event.preventDefault();
 	}
 
 	showVal(e){
-		e.preventDefault();
-		const curVal = e.currentTarget.value;
 		const id = e.currentTarget.id + '_label';
-		const val = e.key;
-		let newVal;
+		const nameField = e.currentTarget.id + '_val';
 		let arr = this.state.prohibLabel;
-		let oldActiveEl = this.state.activeEl;
-		if (val.length === 1){
-			newVal = curVal + val;
-		} else {
-			newVal = curVal;
-		}
-		if (newVal.length !== 0){
-			arr.push(id);
-			this.setState({
-				activeEl: '',
-			});
-			document.removeEventListener('click', this.moveDownTitle);
-		} else {
-			arr.splice(arr.indexOf(id), 1);
-			this.setState({
-				activeEl: id,
-			});
-		}
-		e.currentTarget.value = newVal;
+		this.setState({
+			[nameField]: e.currentTarget.value,
+		}, () => {
+			if (this.state[nameField].length !== 0){
+				if (!arr.includes(id)){
+					arr.push(id)
+				};
+			} else {
+				arr.splice(arr.indexOf(id), 1);
+				this.setState({
+					activeEl: id,
+				});
+			}
+		});		
 	}
 
 	moveTitle(e){
@@ -64,15 +64,20 @@ class SendForm extends Component{
 		oldActiveEl = this.state.activeEl;
 		oldInp = oldActiveEl.replace(/_label/g, '_inp');
 		this.setState({
-			[oldActiveEl]: false,
-			[oldInp]: false,
 			[id]: true,
 			[inp]: true,
 			activeEl: id,
 		}, () => {
 			document.addEventListener('click', this.moveDownTitle);
-		})	
+		})
+		if (!this.state.prohibLabel.includes(oldActiveEl)){
+			this.setState({
+				[oldActiveEl]: false,
+				[oldInp]: false,
+			});
+		}
 	}
+	
 
 	moveDownTitle(e){
 		let oldActiveEl = this.state.activeEl;
@@ -98,19 +103,43 @@ class SendForm extends Component{
 		return(
 			<div className={ style.sendForm }>
 				<TitleSection title={ this.state.titleSection }/>
-				<form>
+				<form onSubmit={ this.formSubmit }>
 					<div>
 						<div className={ style.upperInput }>
-							<input id='feedbackName' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ inpName }/>
+							<input 
+								id='feedbackName'
+								type='text'
+								className={ inpName }
+								name='fullname'
+								value={ this.state.feedbackName_val }
+								onClick={ this.moveTitle }
+								onChange={ this.showVal }
+							/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
 						</div>
 						<div className={ style.upperInput }>
-							<input id='feedbackMail' type='text' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ inpMail }/>
+							<input 
+								id='feedbackMail'
+								type='text'
+								className={ inpMail }
+								name='mail'
+								value={ this.state.feedbackMail_val }
+								onClick={ this.moveTitle }
+								onChange={ this.showVal }
+							/>
 							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
 						</div>
 					</div>
 					<div className={ style.message }>
-						<textarea id='feedbackMes' rows='9' onClick={ this.moveTitle } onKeyDown={ this.showVal } className={ this.state.feedbackMes_inp ? style.whiteBorder : '' }></textarea>
+						<textarea 
+							id='feedbackMes'
+							rows='9'
+							name='message'
+							value={ this.state.feedbackMes_val }
+							className={ this.state.feedbackMes_inp ? style.whiteBorder : '' }
+							onClick={ this.moveTitle }
+							onChange={ this.showVal }
+						></textarea>
 						<label className={ this.state.feedbackMes_label ? style.upTextarea : '' } htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
 					<Button btn={ this.state.button }/>

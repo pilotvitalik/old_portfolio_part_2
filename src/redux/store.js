@@ -189,7 +189,7 @@ let store = {
     {
       button:{
         title: 'Отправить',
-        type: 'button',
+        type: 'submit',
         link: '',
       }
     },
