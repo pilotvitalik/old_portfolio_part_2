@@ -25,7 +25,7 @@ form>div{
 }
 form>div:first-child,
 form>div:first-child>div:first-child{
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 .upperInput{
 	display: flex;
@@ -87,6 +87,18 @@ form>div:first-child>div:first-child{
 .message{
 	margin-bottom: 50px;
 }
+.error{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 7px;
+	font-size: 14px;
+	color: #ffafaf;
+}
+.whiteBorder{
+	border-color: #fff !important;
+}
 @media (min-width: 992px){
 	.sendForm{
 		width: 95%;
@@ -110,7 +122,4 @@ form>div:first-child>div:first-child{
 	form>div:first-child>div:first-child{
 		margin-bottom: 0;
 	}
-}
-.whiteBorder{
-	border-color: #fff !important;
 }

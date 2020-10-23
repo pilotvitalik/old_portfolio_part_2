@@ -14,6 +14,7 @@ class SendForm extends Component{
 			feedbackName_val: '',
 			feedbackMail_val: '',
 			feedbackMes_val: '',
+			errorMailValid: false,
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
@@ -23,9 +24,18 @@ class SendForm extends Component{
 
 	formSubmit(event){
 		event.preventDefault();
-		let re = /\w+@\w+.\w+/gm;
+		let re = /\w+@\w+\.[a-zA-Z]+/;
+		console.log(re.test(this.state.feedbackMail_val))
 		if (re.test(this.state.feedbackMail_val)){
-			console.log('Отправляем форму');
+			if (/\.\w+/.exec(this.state.feedbackMail_val)[0].match(/\d/)){
+				this.setState({
+					errorMailValid: true
+				});
+			}
+		} else {
+			this.setState({
+				errorMailValid: true
+			});
 		}
 	}
 
@@ -104,6 +114,10 @@ class SendForm extends Component{
 		let inpMail = style.formInp;
 		inpMail += ' ';
 		inpMail += this.state.feedbackMail_inp ? style.whiteBorder : '';
+		let errorMail;
+		if (this.state.errorMailValid){
+			errorMail = <p className={ style.error }>Необходимо указать email формата example@yandex.ru</p>;
+		}
 		return(
 			<div className={ style.sendForm }>
 				<TitleSection title={ this.state.titleSection }/>
@@ -132,6 +146,7 @@ class SendForm extends Component{
 								onChange={ this.showVal }
 							/>
 							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
+							{ errorMail }
 						</div>
 					</div>
 					<div className={ style.message }>
