@@ -23,6 +23,10 @@ class SendForm extends Component{
 
 	formSubmit(event){
 		event.preventDefault();
+		let re = /\w+@\w+.\w+/gm;
+		if (re.test(this.state.feedbackMail_val)){
+			console.log('Отправляем форму');
+		}
 	}
 
 	showVal(e){
