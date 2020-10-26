@@ -6,9 +6,11 @@ import style from './upperBlock.module.css';
 class UpperBlock extends Component{
 	constructor(props){
 		super(props);
+		console.log(this.props);
 		this.state = {
 			logo: this.props.navBar.logo, 
 			list: this.props.navBar.navMenuList,
+			lang: this.props.navBar.changeLang,
 		};
 	}
 
@@ -16,7 +18,7 @@ class UpperBlock extends Component{
 		return(
 			<div className={ style.upperBlock }>
 				<Logo image={ this.state.logo }/> 
-				<NavMenu navMenu={ this.state.list }/>
+				<NavMenu navMenu={ this.state.list } lang={ this.state.lang }/>
 			</div>
 		);
 	}

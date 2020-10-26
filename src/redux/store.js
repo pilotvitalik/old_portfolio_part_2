@@ -124,6 +124,20 @@ let store = {
       },
     ],
   ],
+  changeLang:[
+    {
+      idLang: 1,
+      language: 'русский',
+      langCode: 'RU',
+      name: 'changeLang'
+    },
+    {
+      idLang: 2,
+      language: 'английский',
+      langCode: 'EN',
+      name: 'changeLang'
+    }
+  ],
   logo: {
     url: logo,
     name: 'это я',

@@ -9,6 +9,13 @@
 	min-height: 476px;
 	background: #17181B;
 }
+.upperBlock>div:last-child{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
 @media (min-width: 768px){
 	.upperBlock{
 		width: 100%;

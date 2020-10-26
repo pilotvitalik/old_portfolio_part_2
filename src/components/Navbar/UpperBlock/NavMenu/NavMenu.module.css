@@ -44,3 +44,17 @@ ul li a{
 ul li:hover{
 	cursor: pointer;
 }
+div ul:last-child{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+div ul:last-child li{
+	width: 26px;
+}
+div ul:last-child li:last-child{
+	margin-right: 48%;
+}
