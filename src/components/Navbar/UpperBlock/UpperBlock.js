@@ -6,7 +6,6 @@ import style from './upperBlock.module.css';
 class UpperBlock extends Component{
 	constructor(props){
 		super(props);
-		console.log(this.props);
 		this.state = {
 			logo: this.props.navBar.logo, 
 			list: this.props.navBar.navMenuList,

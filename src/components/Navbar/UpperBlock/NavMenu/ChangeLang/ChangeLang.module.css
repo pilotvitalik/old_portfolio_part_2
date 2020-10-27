@@ -12,6 +12,7 @@ input+label {
   user-select: none;
   text-align: center;
   line-height: 22px;
+  color: rgb(119, 119, 119);
 }
 input+label::before {
   content: '';
@@ -23,15 +24,19 @@ input+label::before {
   left: 0;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #adb5bd;
+  border: 1px solid rgb(119, 119, 119);
   border-radius: 0.25em;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
 }
+/*#adb5bd*/
+input:checked+label{
+  color: #fff;
+}
 input:checked+label::before {
   cursor: pointer;
-  background: red;  
+  border-color: #fff; 
 }
 input:not(:disabled):not(:checked)+label:hover::before {
   cursor: pointer;
