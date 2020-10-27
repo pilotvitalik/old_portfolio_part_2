@@ -44,7 +44,7 @@ ul li a{
 ul li:hover{
 	cursor: pointer;
 }
-div ul:last-child{
+.navMenu ul:last-child{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -52,9 +52,9 @@ div ul:last-child{
 	width: 100%;
 	height: auto;
 }
-div ul:last-child li{
+.navMenu ul:last-child li{
 	width: 27px;
 }
-div ul:last-child li:last-child{
+.navMenu ul:last-child li:last-child{
 	margin-right: 48%;
 }

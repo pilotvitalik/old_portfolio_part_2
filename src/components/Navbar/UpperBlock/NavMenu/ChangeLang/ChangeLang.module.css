@@ -1,9 +1,9 @@
-input {
+ul li input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-input+label {
+ul li input+label {
   display: inline-block;
   position: relative;
   width: 26px;
@@ -14,7 +14,7 @@ input+label {
   line-height: 22px;
   color: rgb(119, 119, 119);
 }
-input+label::before {
+ul li input+label::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -31,16 +31,16 @@ input+label::before {
   background-size: 50% 50%;
 }
 /*#adb5bd*/
-input:checked+label{
+ul li input:checked+label{
   color: #fff;
 }
-input:checked+label::before {
+ul li input:checked+label::before {
   cursor: pointer;
   border-color: #fff; 
 }
-input:not(:disabled):not(:checked)+label:hover::before {
+ul li input:not(:disabled):not(:checked)+label:hover::before {
   cursor: pointer;
 }
-input:not(:disabled):active+label::before {
+ul li input:not(:disabled):active+label::before {
   cursor: pointer;
 }

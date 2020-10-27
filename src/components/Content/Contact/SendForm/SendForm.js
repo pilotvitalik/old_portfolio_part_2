@@ -15,11 +15,13 @@ class SendForm extends Component{
 			feedbackMail_val: '',
 			feedbackMes_val: '',
 			errorMailValid: false,
+			errorNameValid: false,
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
 		this.showVal = this.showVal.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
+		this.langValid = this.langValid.bind(this);
 	}
 
 	formSubmit(event){
@@ -39,24 +41,48 @@ class SendForm extends Component{
 		}
 	}
 
+	langValid(el){
+		let val = el.currentTarget.value;
+		let isValid = true;
+		console.log(val);
+		if (val.match(/[a-zA-Z]/i)){
+			isValid = false;
+		}
+		if (!isValid){
+			this.setState({
+				errorNameValid: true,
+			});
+			return false;
+		} else {
+			this.setState({
+				errorNameValid: false,
+			});
+			return true;
+		}
+	}
+
 	showVal(e){
 		const id = e.currentTarget.id + '_label';
 		const nameField = e.currentTarget.id + '_val';
 		let arr = this.state.prohibLabel;
-		this.setState({
-			[nameField]: e.currentTarget.value,
-		}, () => {
-			if (this.state[nameField].length !== 0){
-				if (!arr.includes(id)){
-					arr.push(id)
-				};
-			} else {
-				arr.splice(arr.indexOf(id), 1);
-				this.setState({
-					activeEl: id,
-				});
-			}
-		});		
+		let isValidLang = this.langValid(e);
+		console.log(isValidLang);
+		if (isValidLang){
+			this.setState({
+				[nameField]: e.currentTarget.value,
+			}, () => {
+				if (this.state[nameField].length !== 0){
+					if (!arr.includes(id)){
+						arr.push(id)
+					};
+				} else {
+					arr.splice(arr.indexOf(id), 1);
+					this.setState({
+						activeEl: id,
+					});
+				}
+			});
+		}
 	}
 
 	moveTitle(e){
@@ -115,8 +141,12 @@ class SendForm extends Component{
 		inpMail += ' ';
 		inpMail += this.state.feedbackMail_inp ? style.whiteBorder : '';
 		let errorMail;
+		let errorName;
 		if (this.state.errorMailValid){
 			errorMail = <p className={ style.error }>Необходимо указать email формата example@yandex.ru</p>;
+		}
+		if (this.state.errorNameValid){
+			errorName = <p className={ style.error }>Разрешено вводить только русские буквы</p>;
 		}
 		return(
 			<div className={ style.sendForm }>
@@ -134,6 +164,7 @@ class SendForm extends Component{
 								onChange={ this.showVal }
 							/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
+							{ errorName }
 						</div>
 						<div className={ style.upperInput }>
 							<input 

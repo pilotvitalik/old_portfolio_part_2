@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Item } from './Item/Item.js';
 import { ChangeLang } from './ChangeLang/ChangeLang.js';
-import './NavMenu.module.css';
+import style from './NavMenu.module.css';
 
 class NavMenu extends Component{
 	constructor(props){
@@ -22,7 +22,7 @@ class NavMenu extends Component{
 			return <ChangeLang key={ itemLang.idLang } data={ itemLang }/>
 		});
 		return (
-			<div>
+			<div className={ style.navMenu }>
 				<ul>
 					{ listItems }
 				</ul>
