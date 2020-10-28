@@ -16,6 +16,7 @@ class SendForm extends Component{
 			feedbackMes_val: '',
 			errorMailValid: false,
 			errorNameValid: false,
+			activeLang: this.props.activeLang,
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
@@ -42,9 +43,10 @@ class SendForm extends Component{
 	}
 
 	langValid(el){
+		let langCode = this.props.compareLang();
+		console.log(langCode);
 		let val = el.currentTarget.value;
 		let isValid = true;
-		console.log(val);
 		if (val.match(/[a-zA-Z]/i)){
 			isValid = false;
 		}
@@ -66,7 +68,6 @@ class SendForm extends Component{
 		const nameField = e.currentTarget.id + '_val';
 		let arr = this.state.prohibLabel;
 		let isValidLang = this.langValid(e);
-		console.log(isValidLang);
 		if (isValidLang){
 			this.setState({
 				[nameField]: e.currentTarget.value,
@@ -131,7 +132,6 @@ class SendForm extends Component{
 		}
 		document.removeEventListener('click', this.moveDownTitle);
 	}
-
 
 	render(){
 		let inpName = style.formInp;

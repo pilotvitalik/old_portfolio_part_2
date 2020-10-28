@@ -9,8 +9,12 @@ class ChangeLang extends Component{
 			langName: this.props.data.language,
 			langCode: this.props.data.langCode,
 			name: this.props.data.name,
-			isActive: false,
 		};
+		this.actLang = this.actLang.bind(this);
+	}
+
+	actLang(e){
+		this.props.changeLang(e.target.dataset.active);
 	}
 
 	render(){
@@ -21,7 +25,14 @@ class ChangeLang extends Component{
 		}
 		return(
 			<li>
-				<input id={ idInp } type='radio' name={ this.state.name } defaultChecked={ activeCheckbox }/>
+				<input 
+					id={ idInp }
+					type='radio'
+					name={ this.state.name }
+					defaultChecked={ activeCheckbox }
+					data-active={ this.state.langCode }
+					onClick={ this.actLang }
+				/>
 				<label htmlFor={ idInp }>{ this.state.langCode }</label>
 			</li>
 		);

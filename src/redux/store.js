@@ -229,6 +229,7 @@ let store = {
     ],
     {
       title:'Обратная связь', 
+      activeLang: 'RU',
     }
   ],
   aboutPage:[

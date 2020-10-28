@@ -13,6 +13,8 @@ class Contact extends Component{
 			otherContacts: this.props.contactPage[2],
 			button: this.props.contactPage[1].button,
 			titleSection: this.props.contactPage[3].title,
+			activeLang: this.props.activeLang,
+			compareLang: this.props.compareLang,
 		}
 	}
 
@@ -20,7 +22,7 @@ class Contact extends Component{
 		return(
 			<div className={ style.contact }>
 				<HeaderPage icon={ this.state.mailIcon }/>
-				<SendForm btn={ this.state.button } title={ this.state.titleSection }/>
+				<SendForm btn={ this.state.button } title={ this.state.titleSection } activeLang={ this.state.activeLang } compareLang={ this.state.compareLang }/>
 				<OtherContacts contact={ this.state.otherContacts }/>
 				<Maps/>
 			</div>

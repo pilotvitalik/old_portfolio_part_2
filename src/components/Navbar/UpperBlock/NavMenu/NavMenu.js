@@ -9,6 +9,7 @@ class NavMenu extends Component{
 		this.state = {
 			items: this.props.navMenu,	
 			lang: this.props.lang,
+			changeLang: this.props.changeLang,
 		};
 	}
 
@@ -19,7 +20,7 @@ class NavMenu extends Component{
 			return <Item activeOnlyWhenExact={ true } key={ item[2].id } data={ item[2] } activeImg={ item[1] } url={ item[0] } onChamgeItem={ this.handleChangeMenuItem }/>
 		});
 		const langItems = listLang.map((itemLang) => {
-			return <ChangeLang key={ itemLang.idLang } data={ itemLang }/>
+			return <ChangeLang key={ itemLang.idLang } data={ itemLang } changeLang={ this.state.changeLang }/>
 		});
 		return (
 			<div className={ style.navMenu }>

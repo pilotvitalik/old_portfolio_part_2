@@ -18,6 +18,8 @@ class Content extends Component{
 			resumePage: this.props.content.resumePage,
 			portfolioPage: this.props.content.portfolioPage,
 			blogPage: this.props.content.blogPage,
+			activeLang: this.props.lang,
+			compareLang: this.props.onCompareLang,
 		}
 	}
 
@@ -52,7 +54,7 @@ class Content extends Component{
 		    		<Blog blog={ this.state.blogPage }/>
 		    	</Route>
 		    	<Route path='/contacts'>
-		    		<Contact contactPage={ this.state.contactPage }/>
+		    		<Contact contactPage={ this.state.contactPage } activeLang={ this.state.activeLang } compareLang={ this.state.compareLang }/>
 		    	</Route>
 		    </Switch>
 		  </div>
