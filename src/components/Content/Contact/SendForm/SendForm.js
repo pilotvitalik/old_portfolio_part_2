@@ -20,6 +20,12 @@ class SendForm extends Component{
 		this.moveTitle = this.moveTitle.bind(this);
 		this.showVal = this.showVal.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
+		this.tabDetect = this.tabDetect.bind(this);
+	}
+
+	tabDetect(event){
+		console.log(event);
+		console.log(event.currentTarget);
 	}
 
 	formSubmit(event){
@@ -60,6 +66,8 @@ class SendForm extends Component{
 	}
 
 	moveTitle(e){
+		console.log('moveTitle');
+		console.log(e.currentTarget);
 		const id = e.currentTarget.id + '_label';
 		const inp = e.currentTarget.id + '_inp';
 		let oldActiveEl;
@@ -69,9 +77,10 @@ class SendForm extends Component{
 				[id]: true,
 				[inp]: true,
 				activeEl: id,
-			}, () => {
-				document.addEventListener('click', this.moveDownTitle);
 			})
+			setTimeout(() => {
+				document.addEventListener('click', this.moveDownTitle);
+			}, 10);
 			return false;
 		}
 		document.removeEventListener('click', this.moveDownTitle);
@@ -81,19 +90,26 @@ class SendForm extends Component{
 			[id]: true,
 			[inp]: true,
 			activeEl: id,
-		}, () => {
-			document.addEventListener('click', this.moveDownTitle);
-		})
+		}//, () => {
+		// 	setTimeout(() => {
+		// 		document.addEventListener('click', this.moveDownTitle);
+		// 	}, 100);
+		//}
+		)
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
 			this.setState({
 				[oldActiveEl]: false,
 				[oldInp]: false,
 			});
 		}
+		setTimeout(() => {
+			document.addEventListener('click', this.moveDownTitle);
+		}, 10);
 	}
 	
 
 	moveDownTitle(e){
+		console.log('moveDownTitle')
 		let oldActiveEl = this.state.activeEl;
 		const inp = e.currentTarget.id + '_inp';
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
@@ -129,8 +145,9 @@ class SendForm extends Component{
 								className={ inpName }
 								name='fullname'
 								value={ this.state.feedbackName_val }
-								onClick={ this.moveTitle }
+								//onClick={ this.moveTitle }
 								onChange={ this.showVal }
+								onFocus={ this.moveTitle }
 							/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
 						</div>
@@ -141,8 +158,9 @@ class SendForm extends Component{
 								className={ inpMail }
 								name='mail'
 								value={ this.state.feedbackMail_val }
-								onClick={ this.moveTitle }
+								//onClick={ this.moveTitle }
 								onChange={ this.showVal }
+								onFocus={ this.moveTitle }
 							/>
 							<label className={ this.state.feedbackMail_label ? style.upLabel : '' } htmlFor='feedbackMail'>Email</label>
 							{ errorMail }
@@ -155,8 +173,9 @@ class SendForm extends Component{
 							name='message'
 							value={ this.state.feedbackMes_val }
 							className={ this.state.feedbackMes_inp ? style.whiteBorder : '' }
-							onClick={ this.moveTitle }
+							//onClick={ this.moveTitle }
 							onChange={ this.showVal }
+							onFocus={ this.moveTitle }
 						></textarea>
 						<label className={ this.state.feedbackMes_label ? style.upTextarea : '' } htmlFor='feedbackMes'>Как я могу помочь Вам?</label>
 					</div>
