@@ -10,11 +10,6 @@ class ChangeLang extends Component{
 			langCode: this.props.data.langCode,
 			name: this.props.data.name,
 		};
-		this.actLang = this.actLang.bind(this);
-	}
-
-	actLang(e){
-		this.props.changeLang(e.target.dataset.active);
 	}
 
 	render(){
@@ -31,7 +26,6 @@ class ChangeLang extends Component{
 					name={ this.state.name }
 					defaultChecked={ activeCheckbox }
 					data-active={ this.state.langCode }
-					onClick={ this.actLang }
 				/>
 				<label htmlFor={ idInp }>{ this.state.langCode }</label>
 			</li>

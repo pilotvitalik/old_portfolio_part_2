@@ -10,14 +10,13 @@ class Navbar extends Component{
 			navBar: this.props.navBar,
 			social: this.props.navBar.socialDark,
 			rights: this.props.navBar.rights,
-			changeLang: this.props.onLangChange,
 		}
 	}
 
 	render(){
 		return(
 		<div className={ style.leftNavbar }>
-		  <UpperBlock navBar={ this.state.navBar } changeLang={ this.state.changeLang }/>
+		  <UpperBlock navBar={ this.state.navBar }/>
 		  <BottomBlock social={ this.state.social } rights={ this.state.rights }/>
 		</div>
 		);

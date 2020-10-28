@@ -15,14 +15,11 @@ class SendForm extends Component{
 			feedbackMail_val: '',
 			feedbackMes_val: '',
 			errorMailValid: false,
-			errorNameValid: false,
-			activeLang: this.props.activeLang,
 		};
 		this.moveDownTitle = this.moveDownTitle.bind(this);
 		this.moveTitle = this.moveTitle.bind(this);
 		this.showVal = this.showVal.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
-		this.langValid = this.langValid.bind(this);
 	}
 
 	formSubmit(event){
@@ -42,33 +39,10 @@ class SendForm extends Component{
 		}
 	}
 
-	langValid(el){
-		let langCode = this.props.compareLang();
-		console.log(langCode);
-		let val = el.currentTarget.value;
-		let isValid = true;
-		if (val.match(/[a-zA-Z]/i)){
-			isValid = false;
-		}
-		if (!isValid){
-			this.setState({
-				errorNameValid: true,
-			});
-			return false;
-		} else {
-			this.setState({
-				errorNameValid: false,
-			});
-			return true;
-		}
-	}
-
 	showVal(e){
 		const id = e.currentTarget.id + '_label';
 		const nameField = e.currentTarget.id + '_val';
 		let arr = this.state.prohibLabel;
-		let isValidLang = this.langValid(e);
-		if (isValidLang){
 			this.setState({
 				[nameField]: e.currentTarget.value,
 			}, () => {
@@ -83,7 +57,6 @@ class SendForm extends Component{
 					});
 				}
 			});
-		}
 	}
 
 	moveTitle(e){
@@ -141,12 +114,8 @@ class SendForm extends Component{
 		inpMail += ' ';
 		inpMail += this.state.feedbackMail_inp ? style.whiteBorder : '';
 		let errorMail;
-		let errorName;
 		if (this.state.errorMailValid){
 			errorMail = <p className={ style.error }>Необходимо указать email формата example@yandex.ru</p>;
-		}
-		if (this.state.errorNameValid){
-			errorName = <p className={ style.error }>Разрешено вводить только русские буквы</p>;
 		}
 		return(
 			<div className={ style.sendForm }>
@@ -164,7 +133,6 @@ class SendForm extends Component{
 								onChange={ this.showVal }
 							/>
 							<label className={ this.state.feedbackName_label ? style.upLabel : '' } htmlFor='feedbackName'>Введите имя</label>
-							{ errorName }
 						</div>
 						<div className={ style.upperInput }>
 							<input 

@@ -10,7 +10,6 @@ class UpperBlock extends Component{
 			logo: this.props.navBar.logo, 
 			list: this.props.navBar.navMenuList,
 			lang: this.props.navBar.changeLang,
-			changeLang: this.props.changeLang,
 		};
 	}
 
@@ -18,7 +17,7 @@ class UpperBlock extends Component{
 		return(
 			<div className={ style.upperBlock }>
 				<Logo image={ this.state.logo }/> 
-				<NavMenu navMenu={ this.state.list } lang={ this.state.lang }  changeLang={ this.state.changeLang }/>
+				<NavMenu navMenu={ this.state.list } lang={ this.state.lang }/>
 			</div>
 		);
 	}
