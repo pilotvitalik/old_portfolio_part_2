@@ -90,12 +90,11 @@ class SendForm extends Component{
 			[id]: true,
 			[inp]: true,
 			activeEl: id,
-		}//, () => {
-		// 	setTimeout(() => {
-		// 		document.addEventListener('click', this.moveDownTitle);
-		// 	}, 100);
-		//}
-		)
+		}, () => {
+		 	setTimeout(() => {
+		 		document.addEventListener('click', this.moveDownTitle);
+		 	}, 100);
+		})
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
 			this.setState({
 				[oldActiveEl]: false,
@@ -104,7 +103,7 @@ class SendForm extends Component{
 		}
 		setTimeout(() => {
 			document.addEventListener('click', this.moveDownTitle);
-		}, 10);
+		}, 100);
 	}
 	
 
