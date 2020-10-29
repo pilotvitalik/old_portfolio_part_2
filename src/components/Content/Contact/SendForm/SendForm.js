@@ -20,18 +20,11 @@ class SendForm extends Component{
 		this.moveTitle = this.moveTitle.bind(this);
 		this.showVal = this.showVal.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
-		this.tabDetect = this.tabDetect.bind(this);
-	}
-
-	tabDetect(event){
-		console.log(event);
-		console.log(event.currentTarget);
 	}
 
 	formSubmit(event){
 		event.preventDefault();
 		let re = /\w+@\w+\.[a-zA-Z]+/;
-		console.log(re.test(this.state.feedbackMail_val))
 		if (re.test(this.state.feedbackMail_val)){
 			if (/\.\w+/.exec(this.state.feedbackMail_val)[0].match(/\d/)){
 				this.setState({
@@ -63,11 +56,10 @@ class SendForm extends Component{
 					});
 				}
 			});
+		
 	}
 
 	moveTitle(e){
-		console.log('moveTitle');
-		console.log(e.currentTarget);
 		const id = e.currentTarget.id + '_label';
 		const inp = e.currentTarget.id + '_inp';
 		let oldActiveEl;
@@ -108,7 +100,6 @@ class SendForm extends Component{
 	
 
 	moveDownTitle(e){
-		console.log('moveDownTitle')
 		let oldActiveEl = this.state.activeEl;
 		const inp = e.currentTarget.id + '_inp';
 		if (!this.state.prohibLabel.includes(oldActiveEl)){
@@ -144,7 +135,6 @@ class SendForm extends Component{
 								className={ inpName }
 								name='fullname'
 								value={ this.state.feedbackName_val }
-								//onClick={ this.moveTitle }
 								onChange={ this.showVal }
 								onFocus={ this.moveTitle }
 							/>
@@ -157,7 +147,6 @@ class SendForm extends Component{
 								className={ inpMail }
 								name='mail'
 								value={ this.state.feedbackMail_val }
-								//onClick={ this.moveTitle }
 								onChange={ this.showVal }
 								onFocus={ this.moveTitle }
 							/>
@@ -172,7 +161,6 @@ class SendForm extends Component{
 							name='message'
 							value={ this.state.feedbackMes_val }
 							className={ this.state.feedbackMes_inp ? style.whiteBorder : '' }
-							//onClick={ this.moveTitle }
 							onChange={ this.showVal }
 							onFocus={ this.moveTitle }
 						></textarea>
