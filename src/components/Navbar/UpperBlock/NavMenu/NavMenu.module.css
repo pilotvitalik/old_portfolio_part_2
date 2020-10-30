@@ -41,10 +41,13 @@ ul li a{
 	letter-spacing: 2px;
 	text-decoration: none;
 	line-height: 46px;
-	padding-left: 46px;
+	padding-left: 50px;
 }
 ul li:hover{
 	cursor: pointer;
+}
+.navMenu ul:first-child li a:hover{
+	color: #fff;
 }
 .navMenu ul:last-child{
 	display: flex;
