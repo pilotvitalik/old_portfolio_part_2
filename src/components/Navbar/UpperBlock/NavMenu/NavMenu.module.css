@@ -1,4 +1,4 @@
-ul{
+.navMenu ul{
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -9,7 +9,7 @@ ul{
 	background: #17181B;
 	z-index: 1;
 }
-ul li{
+.navMenu ul li{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -22,7 +22,7 @@ ul li{
 	color: #fff;
 	border-bottom: 1px solid #202226;
 }
-ul li img{
+.navMenu ul li img{
 	display: block;
 	position: absolute;
 	width: auto;
@@ -30,7 +30,7 @@ ul li img{
 	left: 20px;
 	top: 12px;
 }
-ul li a{
+.navMenu ul li a{
 	display: inline-block;
 	position: relative;
 	width: 100%;
@@ -43,7 +43,7 @@ ul li a{
 	line-height: 46px;
 	padding-left: 50px;
 }
-ul li:hover{
+.navMenu ul li:hover{
 	cursor: pointer;
 }
 .navMenu ul:first-child li a:hover{

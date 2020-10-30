@@ -8,17 +8,28 @@ function Item(props){
 	  exact: props.activeOnlyWhenExact
 	});
 	let page = '';
+	let activeLink = false
 	let prePage = props.url.replace(/\//g, '');
 	if (prePage.length === 0){
 		prePage = 'mainLength'
 	}
 	page = style[prePage];
+	if (match){
+		activeLink = true;
+	}
 
 	return(
 		<li className={ page }>	
-			<NavLink exact to={ props.url } activeClassName='activeNavBar'>
-				{ props.data.title }
-				<img src={ match ? props.activeImg.whiteImg : props.activeImg.darkImg } alt={ props.data.name }/>
+			<NavLink 
+				exact 
+				to={ props.url }
+				activeClassName='activeNavBar'
+			>
+			{ props.data.title }
+				<img 
+					src={ activeLink ? props.activeImg.whiteImg : props.activeImg.darkImg }
+					alt={ props.data.name }
+				/>
 			</NavLink>
 		</li>
 	);
