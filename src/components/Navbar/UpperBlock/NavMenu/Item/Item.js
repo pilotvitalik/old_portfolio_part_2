@@ -1,33 +1,39 @@
 import React from 'react';
 import { NavLink, useRouteMatch } from 'react-router-dom';
-import style from './Item.module.css';
+import './Item.module.css';
 
 function Item(props){
 	let match = useRouteMatch({
 	  path: props.url,
 	  exact: props.activeOnlyWhenExact
 	});
-	let page = '';
-	let activeLink = false
-	let prePage = props.url.replace(/\//g, '');
-	if (prePage.length === 0){
-		prePage = 'mainLength'
+
+	function showWhiteImg(e){
+		let img = e.currentTarget.children[0];
+		if (!e.currentTarget.classList.contains('activeNavBar')){
+			img.src = props.activeImg.whiteImg;
+		}
 	}
-	page = style[prePage];
-	if (match){
-		activeLink = true;
+
+	function showGreyImg(e){
+		let img = e.currentTarget.children[0];
+		if (!e.currentTarget.classList.contains('activeNavBar')){
+			img.src = props.activeImg.darkImg;
+		}
 	}
 
 	return(
-		<li className={ page }>	
+		<li>	
 			<NavLink 
 				exact 
 				to={ props.url }
 				activeClassName='activeNavBar'
+				onMouseOver={ showWhiteImg }
+				onMouseOut={ showGreyImg }
 			>
 			{ props.data.title }
 				<img 
-					src={ activeLink ? props.activeImg.whiteImg : props.activeImg.darkImg }
+					src={ match ? props.activeImg.whiteImg : props.activeImg.darkImg }
 					alt={ props.data.name }
 				/>
 			</NavLink>
