@@ -1,18 +1,10 @@
-.mainLength{
-	color: red;
+.about_me img{
+	transform: scale(1.45);
 }
-.about_me{
-
+.resume img{
+	transform: scale(1.2);
 }
-.resume{
-
-}
-.portfolio{
-
-}
-.blog{
-
-}
-.contacts{
-	
+.blog img{
+	left: 22px;
+	transform: scale(1.25);
 }
