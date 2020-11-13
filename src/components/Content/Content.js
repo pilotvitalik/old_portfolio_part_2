@@ -35,26 +35,26 @@ class Content extends Component{
 		    		<span></span>
 		    	</div>
 		    </div>
-		    <Switch>
-		    	<Route exact path='/'>
-		    		<Home/>
-		    	</Route>
-		    	<Route path='/about_me'>
-		    		<About about={ this.state.aboutPage }/>
-		    	</Route>
-		    	<Route path='/resume'>
-		    		<Resume resume={ this.state.resumePage }/>
-		    	</Route>
-		    	<Route path='/portfolio'>
-		    		<Portfolio portfolio={ this.state.portfolioPage }/>
-		    	</Route>
-		    	<Route path='/blog'>
-		    		<Blog blog={ this.state.blogPage }/>
-		    	</Route>
-		    	<Route path='/contacts'>
-		    		<Contact contactPage={ this.state.contactPage }/>
-		    	</Route>
-		    </Switch>
+			    <Switch>
+			    	<Route exact path='/'>
+			    		<Home/>
+			    	</Route>
+			    	<Route path='/about_me'>
+			    		<About about={ this.state.aboutPage }/>
+			    	</Route>
+			    	<Route path='/resume'>
+			    		<Resume resume={ this.state.resumePage }/>
+			    	</Route>
+			    	<Route path='/portfolio'>
+			    		<Portfolio portfolio={ this.state.portfolioPage }/>
+			    	</Route>
+			    	<Route path='/blog'>
+			    		<Blog blog={ this.state.blogPage }/>
+			    	</Route>
+			    	<Route path='/contacts'>
+			    		<Contact contactPage={ this.state.contactPage }/>
+			    	</Route>
+			    </Switch>
 		  </div>
 		</div>
 		);
